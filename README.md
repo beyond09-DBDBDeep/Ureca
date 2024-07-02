@@ -81,7 +81,7 @@ Your Recommended Cafe
 
 ------
 
-![](https://github.com/beyond09-DBDBDeep/Ureca/blob/main/sample_data/flowchart.png)
+![](https://github.com/beyond09-DBDBDeep/Ureca/blob/main/sample_data/flowchart.jpeg)
 
 ## 3.2 프로젝트 요구사항
 
