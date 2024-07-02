@@ -273,8 +273,8 @@
 | 조제훈 | 컴퓨터공학부              | 백엔드 개발자               | ESFJ | [cho9759@inu.ac.kr](mailto:cho9759@inu.ac.kr)       |
 | 최형석 | 컴퓨터공학과              | 백엔드 개발자               | INFJ | [gudtjr5666@gmail.com](mailto:gudtjr5666@gmail.com) |
 | 최해관 | 불교학부/융합소프트웨어   | PM / 백엔드 개발자          | ENTJ | [kkhagwan@naver.com](mailto:kkhagwan@naver.com)     |
-| 이효진 | 국어국문학과/컴퓨터공학과 | 데이터 보안 / 백엔드 개발자 | INFJ |                                                     |
-| 방동호 | 모바일시스템공학과        | 백엔드 개발자               | INFP | bangdh1593@gmailcom                                 |
+| 이효진 | 국어국문학과/컴퓨터공학과 | 데이터 보안 / 백엔드 개발자 | INFJ |             jin12lee@naver.com                                   |
+| 방동호 | 모바일시스템공학과        | 백엔드 개발자               | INFP | bangdh1593@gmail.com                                 |
 
 ---
 ### 5.2 프로젝트 역할 분담
