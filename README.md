@@ -1,5 +1,5 @@
 # Ureca
-Your Recommended Cafe
+| Your Recommended Cafe
 
 # 1. 프로젝트 개요
 
@@ -61,7 +61,90 @@ Your Recommended Cafe
 
 ------
 
+<details>
+  <summary> 배달의 민족, 요기요, 쿠팡 </summary>
+    <li> 오더(픽업 및 매장 주문) - 음식 카테고리 별 상품 </li>
+    <li> 주문내역, 나의 찜(매장) </li>
+    <li> 전자영수증 </li>
+    <li> 계정 정보 / 개인정보 관리 </li>
+    <li> 결제 수단 관리 </li>
+  	<li> 배달 서비스 </li>
+  	<li> 고객지원</li>
+</details>
 
+<details>
+  <summary> 스타벅스 </summary>
+    <li> 오더(픽업 및 매장 주문) - 음료/푸드/상품 </li>
+    <li> 나만의 메뉴(= 즐겨찾기(+ 커스텀 옵션)) </li>
+    <li> 홀케이크 예약 </li>
+    <li> 장바구니 </li>
+    <li> 히스토리(주문 내역 조회) </li>
+    <li> 별 히스토리(= 스탬프) </li>
+    <li> 전자영수증 </li>
+    <li> 계정 정보 / 개인정보 관리 </li>
+    <li> 결제 수단 관리 </li>
+    <li> 숍(온라인 스토어 : 굿즈 관련) </li>
+    <li> 스타벅스 모바일 카드 선물 및 모바일 상품권 선물 </li>
+    <li> 배달 서비스 </li>
+    <li> 고객지원 </li>
+</details>
+
+<details>
+  <summary> 메가커피 </summary>
+    <li> 멤버쉽(스탬프, 쿠폰, 외부 멤버쉽) </li>
+    <li> 주문 </li>
+    <li> 새소식(이벤트, 공지사항) </li>
+    <li> 약관 및 정책(이용약관) </li>
+</details>
+
+<details>
+  <summary> 투썸 </summary>
+    <li> 마이페이지 </li>
+    <li> 메뉴소개 </li>
+    <li> 매장찾기 </li>
+    <li> 투썸하트(=스탬프) </li>
+    <li> 쿠폰함 </li>
+    <li> 이벤트 </li>
+    <li> 투썸오더(주문 기능) </li>
+    <li> 홀케이크24 </li>
+    <li> 주문내역 </li>
+    <li> 스탬프(이벤트용) </li>
+    <li> 선물하기 </li>
+    <li> 기프트카드(투썸카드) </li>
+    <li> 마이카드(내 투썸카드 등록 및 결제, 관리) </li>
+    <li> 공지사항 </li>
+    <li> 고객의 소리 </li>
+    <li> 제휴카드 (할인 가능 카드) </li>
+    <li> 이용약관 </li>
+    <li> 가맹정보 및 창업 설명회 </li>
+</details>
+
+<details>
+  <summary> 빽다방 </summary>
+    <li> 스탬프 </li>
+    <li> 마이쿠폰 </li>
+    <li> 기프트샵(빽다방 상품권 및 기프티콘) </li>
+    <li> 오더(픽업 오더 및 배달 오더 </li>
+    <li> 이벤트 </li>
+    <li> 매장찾기 </li>
+    <li> 전자영수증 </li>
+    <li> 공지사항 </li>
+    <li> 이용안내 </li>
+    <li> 마이페이지 </li>
+</details>
+
+<details>
+  <summary> 패스오더 </summary>
+    <li> 원거리 주문, 결제 가능(매장 리스트로 주문, 지도로 주문) </li>
+    <li> 테이블 주문, 결제 가능(앉은 테이블에 부착된 QR코드와 NFC인식으로 주문, 결제 가능) </li>
+    <li> 맞춤형 광고 제공 </li>
+    <li> 매출 분석(월별 판매 분석, 결제 수단, 매출 요약) </li>
+    <li> 쿠폰함 </li>
+    <li> 포인트 / 스탬프 </li>
+    <li> 적립 마켓 </li>
+    <li> 선물하기 </li>
+    <li> 자주가요(자주가는 매장 등록) </li>
+</details>
 
 ## 2.2 차별성
 
