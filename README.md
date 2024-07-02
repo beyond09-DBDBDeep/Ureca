@@ -1,15 +1,22 @@
 # Ureca
 | Your Recommended Cafe
 
+### 목차
+
+- [01. 프로젝트 개요](#프로젝트-개요)
+- [02. 국내외 유사 서비스와 차별성](#국내외-유사-서비스와-차별성)
+- [03. 프로젝트 설계](#프로젝트-설계)
+- [04. 프로젝트 수행 결과](#프로젝트-수행-결과)
+- [05. 프로젝트 수행 체계](#프로젝트-수행-체계)
+- [06. 참고문헌](#참고문헌)
+
 # 1. 프로젝트 개요
 
 ## 1.1 프로젝트 소개
 
 ------
 
-![](https://github.com/beyond09-DBDBDeep/Ureca/blob/main/sample_data/introImg1.png)
-
-![](https://github.com/beyond09-DBDBDeep/Ureca/blob/main/sample_data/introImg2.png)
+![](https://github.com/beyond09-DBDBDeep/Ureca/blob/main/sample_data/introImg.png)
 
 **처음 가는 카페에서 어떤 음료를 마실지 고민하시는 모든 분들!**
 
