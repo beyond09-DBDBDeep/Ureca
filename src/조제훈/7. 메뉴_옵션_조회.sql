@@ -10,8 +10,8 @@ SELECT
  
 -- 옵션 조회
 SELECT 
-		 options.optionName
-	  , cafe_option.optionContents
+		 options.optionName AS 옵션명
+	  , cafe_option.optionContents AS 옵션내용
   FROM cafe
   JOIN cafe_option
     ON cafe.cafeId = cafe_option.cafeId
