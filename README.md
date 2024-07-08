@@ -299,9 +299,9 @@
 ---
 ### 4.2 테스트 결과
 
-[![GitHub open issues](https://img.shields.io/github/issues/beyond-sw-camp/be04-1st-CLOUDY-UniVerse)](https://github.com/beyond09-DBDBDeep/Ureca/issues?q=is%3Aopen+is%3Aissue)
+[![GitHub open issues](https://img.shields.io/github/issues/beyond09-DBDBDeep/Ureca)](https://github.com/beyond09-DBDBDeep/Ureca/issues?q=is%3Aopen+is%3Aissue)
 
-[![GitHub close issues](https://img.shields.io/github/issues-closed/beyond-sw-camp/be04-1st-CLOUDY-UniVerse)](https://github.com/beyond09-DBDBDeep/Ureca/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub close issues](https://img.shields.io/github/issues-closed/beyond09-DBDBDeep/Ureca)](https://github.com/beyond09-DBDBDeep/Ureca/issues?q=is%3Aissue+is%3Aclosed)
 
 <details>
 <summary><b>회원</b></summary>
