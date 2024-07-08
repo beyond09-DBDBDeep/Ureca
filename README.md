@@ -167,7 +167,8 @@
 
 ### 3.1 FLOW CHARTS
 
-![](https://github.com/beyond09-DBDBDeep/Ureca/blob/main/sample_data/flowchart.jpeg)
+![Uploading image.png…]()
+
 
 ---
 ### 3.2 프로젝트 요구사항
