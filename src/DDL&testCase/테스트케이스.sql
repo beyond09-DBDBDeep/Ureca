@@ -736,7 +736,7 @@ SELECT * FROM cafe_menu;
 -- 카페 찜 기능
 DELIMITER $$
 
-CREATE TRIGGER increase_favorite_count
+CREATE OR REPLACE TRIGGER increase_favorite_count
 AFTER INSERT ON favorite_cafe
 FOR EACH ROW
 BEGIN
@@ -749,7 +749,7 @@ DELIMITER ;
 
 DELIMITER $$
 
-CREATE TRIGGER decrease_favorite_count
+CREATE OR REPLACE TRIGGER decrease_favorite_count
 AFTER DELETE ON favorite_cafe
 FOR EACH ROW
 BEGIN
