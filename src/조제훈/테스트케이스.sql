@@ -205,9 +205,8 @@ SELECT options.optionName AS '옵션명'
   
 -- 10. 즐겨찾기 추가
 DELIMITER $$
-
 CREATE OR REPLACE TRIGGER count_bookmarks_for_menu
-AFTER INSERT ON combo
+AFTER INSERT OR DELETE ON combo
 FOR EACH ROW
 BEGIN
     DECLARE menu_id INT;
@@ -229,7 +228,6 @@ BEGIN
         WHERE A.menuId = menu_id;
     END IF;
 END $$
-
 DELIMITER ;
 
 SELECT * FROM bookmark;
