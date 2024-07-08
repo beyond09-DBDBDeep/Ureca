@@ -305,9 +305,8 @@
          <p><img src="sample_data/testcase/회원/1_회원가입.gif"/></p>
          </details>
 	 <details>
-         <summary><b>2. ★★★★로그인 성공</b></summary>
-         <p><img src="PNG/Captures/user/회원_비밀번호_찾기1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_비밀번호_찾기2.png"/></p>
+         <summary><b>2. 로그인 성공</b></summary>
+         <p><img src="sample_data/testcase/회원/2_로그인 성공.gif"/></p>
          </details>
 	 <details>
          <summary><b>3. ★★★★로그인 실패</b></summary>
