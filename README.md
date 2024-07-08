@@ -253,7 +253,7 @@
 
 #### (3) 물리 모델
 
-![Untitled (1)](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/ae7d94ee-5868-4d29-9164-2f53130f16db)
+![Uploading image.png…]()
 
 
 ---
