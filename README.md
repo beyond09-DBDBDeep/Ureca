@@ -481,6 +481,11 @@
 
 ### 5.3 프로젝트 수행 방법
 
+![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/105059540/6f2c805a-dbc8-467c-bcf6-f977c26e2d0a)
+
+Ubuntu Linux를 이용하여 DB 서버를 Master-Slave 형태로 Replication하였고,
+
+권한 설정을 통해 Slave는 SELECT만 처리하게 하고, 나머지 쿼리는 Master가 처리하게 하여 서버의 부하를 줄였다.
 
 ---
 ## 6. 팀 회고
