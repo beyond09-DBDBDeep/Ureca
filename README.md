@@ -348,8 +348,7 @@
      <details>
          <summary><b>14. 리뷰 삭제, 내 리뷰 조회</b></summary>
          <p><img src="sample_data/testcase/회원/15,16_리뷰.gif"/></p>
-         </details>
-     
+         </details>    
     </div>
 </details>
 
