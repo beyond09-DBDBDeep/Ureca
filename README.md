@@ -270,16 +270,16 @@
 
 #### (1) 개념 모델
 
-![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/e077e60f-6029-4a65-9e29-e5dad91c716a)
+![image](sample_data/img/conModel.png)
 
 
 #### (2) 논리 모델
 
-![Untitled (2)](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/1eda8a38-3eec-4f8f-b4ce-f9149d3223d9)
+![Untitled (2)](sample_data/img/logModel.png)
 
 #### (3) 물리 모델
 
-![Untitled (3)](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/fbb19fc2-bddc-4187-a454-67e8bc52b643)
+![Untitled (3)](sample_data/img/phyModel.png)
 
 ---
 ## 4. 프로젝트 수행 결과
