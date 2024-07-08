@@ -255,7 +255,8 @@
 
 #### (3) 물리 모델
 
-![Uploading image.png…]()
+![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/172617658/984afa57-3576-4da4-a18d-f4093089555a)
+
 
 
 ---
