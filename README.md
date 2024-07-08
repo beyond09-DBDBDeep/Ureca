@@ -253,7 +253,7 @@
 
 #### (3) 물리 모델
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2e42b292-3597-492a-9d2f-caaf0ff36a48/bdf78e44-57f1-41c8-aff7-9a309d489eb1/Untitled.png)
+![Uploading image.png…]()
 
 
 ---
