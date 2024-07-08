@@ -68,7 +68,7 @@ CREATE TABLE dormant_users (
 
 CREATE TABLE loginHistory (
     loginHistoryId BIGINT PRIMARY KEY AUTO_INCREMENT,
-    loginHistory DATETIME NOT NULL,
+    loginAttemptTime DATETIME NOT NULL,
     loginIp VARCHAR(255) NOT NULL,
     successStatus BOOLEAN NOT NULL,
     userId BIGINT NOT NULL,
