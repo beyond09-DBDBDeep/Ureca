@@ -243,7 +243,8 @@
 
 #### (1) 개념 모델
 
-![](https://github.com/beyond09-DBDBDeep/Ureca/blob/main/sample_data/conModel.png)
+![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/172617658/cdff4b85-cc0b-42e9-a696-57ce755a5fee)
+
 
 #### (2) 논리 모델
 
