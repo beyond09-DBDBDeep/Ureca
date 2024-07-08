@@ -353,6 +353,8 @@ UPDATE review
        userId = NULL
  WHERE reviewId = 3;
 
+SELECT * FROM review;
+
 -- 2) 코멘트가 달려있지 않은 경우
 DELETE FROM review WHERE reviewId = 3;
 
@@ -365,9 +367,13 @@ SELECT * FROM review WHERE userId = 2;
 INSERT INTO users (userType, userName, email, userPassword, phone, gender, birth, address, latitude, longitude, loginFailCount, businessRegNo, blackUserStatus, blackRegDate, blackReason, userQuitStatus, userQuitDate, userQuitReason) VALUES
 ('사업자', '전기범', 'kibeom1145@gmail.com', 'asdfasdf', '010-4288-0442', '남성', '1999-09-20', '경기도 남양주시 별내면 청학로 114번길', 12.123123123, 123.123123123, 0, '800628-125967', FALSE, NULL, NULL, FALSE, NULL, NULL);
 
+SELECT * FROM users;
+
 -- 17. 카페 등록
 INSERT INTO cafe (cafeName, cafeAddress, cafePhone, cafeOpenStatus, cafeServiceScore, cafeFlavorScore, cafeMoodScore, latitude, longitude, franchise, userId) VALUES
 ('기범이네', '경기도 남양주시 별내면 청학로 114번길', '031-1234-5678', FALSE, 0, 0, 0, 12.123123123, 123.123123123, FALSE, 13);
+
+SELECT * FROM cafe;
 
 -- 18. 내 매장 조회
 SELECT cafeId
@@ -405,6 +411,8 @@ UPDATE cafe
      , cafeOpenStatus = TRUE
      , franchise = TRUE
  WHERE cafeId = 5;
+ 
+SELECT * FROM cafe WHERE cafeId = 5;
  
 -- 20. 카테고리 등록
 
@@ -454,13 +462,17 @@ SELECT menuId
  WHERE menuName = '마라아메리카노';
 
 -- 6) cafeId와 menuId를 이용해 cafe_menu 테이블에 레코드 추가 
-INSERT INTO cafe_menu (cafeId, menuId, menuPrice, menuOrderCount, menuFlavorScore, menuSalesStatus, categoryId) VALUES
-(5, 11, 5000, 0, 0, TRUE, 3);
+INSERT INTO cafe_menu (cafeId, menuId, menuPrice, menuFlavorScore, menuSalesStatus, categoryId) VALUES
+(5, 11, 5000, 0, TRUE, 3);
+
+SELECT * FROM cafe_menu;
 
 -- 22. 메뉴 수정
 UPDATE cafe_menu
    SET menuPrice = 10000
  WHERE cafeId = 5 AND menuId = 11;
+
+SELECT * FROM cafe_menu; 
  
 -- 23. 옵션 등록
 
@@ -494,19 +506,31 @@ INSERT INTO cafe_option (cafeId, optionId, optionPrice, optionContents, optionSa
 (5, 10, 0, '당도 50%', TRUE),
 (5, 10, 0, '당도 70%', TRUE);
 
+SELECT * FROM cafe_option;
+
 -- 24. 옵션 수정
 UPDATE cafe_option
    SET optionPrice = 200
  WHERE cafeId = 5 AND optionId = 10;
  
+SELECT * FROM cafe_option;
+ 
 -- 25. 메뉴, 옵션 삭제(판매 중지)
+SELECT * FROM cafe_menu;  
+
 UPDATE cafe_menu
    SET menuSalesStatus = FALSE
- WHERE cafeId = 5 AND menuId = 11; 
+ WHERE cafeId = 5 AND menuId = 11;
+ 
+SELECT * FROM cafe_menu;  
+ 
+SELECT * FROM cafe_option;
  
 UPDATE cafe_option
    SET optionSalesStatus = FALSE
  WHERE cafeId = 5 AND optionId = 10;
+ 
+SELECT * FROM cafe_option;
  
 -- 26. 메뉴판 등록
 
@@ -522,6 +546,8 @@ INSERT INTO menu_list (cafeId, menuId, cafeOptionId) VALUES
 (5, 11, 20),
 (5, 11, 21),
 (5, 11, 22);
+
+SELECT * FROM menu_list;
    
 -- 27. 코멘트 등록
 
@@ -533,6 +559,8 @@ SELECT commentId
 -- 2) 조회된 코멘트가 없을 경우 코멘트 추가  
 INSERT comment (commentContents, commentDate, userId, reviewId) VALUES
 ('감사합니다', NOW(), 13, 1);
+
+SELECT * FROM comment WHERE userId = 13;
  
 -- 28. 코멘트 수정
 UPDATE comment
@@ -540,10 +568,14 @@ UPDATE comment
      , commentDate = NOW()
  WHERE userId = 13 AND reviewId = 1;
  
+SELECT * FROM comment WHERE userId = 13;
+ 
 -- 29. 코멘트 삭제
 DELETE
   FROM comment
  WHERE userId = 13 AND reviewId= 1;
+
+SELECT * FROM comment WHERE userId = 13;
 
 -- 관리자 
 -- 30. 회원 관리
@@ -553,11 +585,25 @@ UPDATE users
 	  , blackReason = '불법 광고'
  WHERE userId = 2;
  
- UPDATE users
+SELECT userId
+     , userName
+     , blackUserStatus
+     , blackRegDate
+	  , blackReason 
+  FROM users WHERE userId = 2;
+ 
+UPDATE users
    SET blackUserStatus = false
 	  , blackRegDate = NULL
 	  , blackReason = NULL
- WHERE userId = 2;
+WHERE userId = 2;
+
+SELECT userId
+     , userName
+     , blackUserStatus
+     , blackRegDate
+	  , blackReason 
+  FROM users WHERE userId = 2;
 
 -- 31. 매장 관리
 
@@ -594,10 +640,18 @@ BEGIN
   		FROM cafe
  	  WHERE cafeId = cafeIndex;
 END//
-DELIMITER ; 
+DELIMITER ;
+
+SELECT * FROM cafe;
+SELECT * FROM menu;
+SELECT * FROM options;
 
 -- 매장 삭제 프로시저 호출
 CALL delete_cafe(5);
+
+SELECT * FROM cafe;
+SELECT * FROM menu;
+SELECT * FROM options;
 
 -- 휴면 계정 전환 스케쥴러
 SELECT * FROM users;
@@ -668,12 +722,14 @@ FOR EACH ROW
 BEGIN
     UPDATE cafe_menu
     SET menuReviewCount = menuReviewCount + 1
-    WHERE menuId = (SELECT menuId FROM cafe_menu WHERE cafeMenuId = NEW.cafeMenuId);
+    WHERE menuId IN (SELECT menuId FROM cafe_menu WHERE cafeMenuId = NEW.cafeMenuId);
 END$$
 
 DELIMITER ;
 
 INSERT INTO cafe_menu_review (cafeMenuId, reviewId) VALUES (1, 1);
+
+SELECT * FROM cafe_menu;
 
 DELIMITER $$
 
@@ -683,11 +739,13 @@ FOR EACH ROW
 BEGIN
     UPDATE cafe_menu
     SET menuReviewCount = menuReviewCount - 1
-    WHERE menuId = (SELECT menuId FROM cafe_menu WHERE cafeMenuId = OLD.cafeMenuId);
-
+    WHERE menuId IN (SELECT menuId FROM cafe_menu WHERE cafeMenuId = OLD.cafeMenuId);
+END $$
 DELIMITER ;
 
 DELETE FROM cafe_menu_review WHERE cafeMenuId = 1 AND reviewId = 1;
+
+SELECT * FROM cafe_menu;
 
 -- 카페 찜 기능
 DELIMITER $$
@@ -731,9 +789,13 @@ VALUES
 
 SELECT * FROM favorite_cafe;
 
+SELECT * FROM cafe;
+
 DELETE FROM favorite_cafe
  WHERE userId = 1 
    AND cafeId = 2;  -- 사용자 ID와 카페 ID로 필터링
+   
+SELECT * FROM cafe;   
 
 SELECT 
        c.cafeName
