@@ -186,3 +186,85 @@ SELECT options.optionName AS '옵션명'
   JOIN options
     ON cafe_option.optionId = options.optionId
  WHERE cafe.cafeId = 1;
+  
+-- 10. 즐겨찾기 추가
+SELECT * FROM bookmark;
+
+INSERT INTO bookmark
+(
+  alias
+, lastModifyDate
+, userId
+) 
+VALUES 
+(
+  '즐겨찾기 1번'
+, NOW()
+, 2
+);
+
+SELECT * FROM bookmark;
+
+SELECT * FROM combo;
+
+INSERT INTO combo (menuCount, optionCount, menuListId, bookmarkId) VALUES
+(1, 1, 1, 5),
+(1, 5, 3, 5);
+
+SELECT * FROM combo;
+
+-- 11. 즐겨찾기 수정
+UPDATE bookmark
+   SET alias = '즐겨찾기 수정',
+       lastModifyDate = NOW()
+ WHERE bookmarkId = 5;
+
+DELETE
+  FROM combo
+ WHERE bookmarkId = 5;
+ 
+INSERT INTO combo (menuCount, optionCount, menuListId, bookmarkId) VALUES
+(1, 1, 1, 5),
+(1, 3, 3, 5);
+ 
+SELECT * FROM bookmark;
+
+-- 12. 즐겨찾기 삭제
+DELETE FROM bookmark WHERE bookmarkId = 5;
+
+SELECT * FROM bookmark;
+
+-- 13. 리뷰 추가
+SELECT * FROM review;
+
+INSERT INTO review(reviewTitle, reviewContents, reviewDate, reviewPhotoUrl, serviceScore, flavorScore, moodScore, userId, cafeId) VALUES 
+('리뷰제목test', '리뷰내용test', NOW(), 'https://cdxarchivephoto.s3.ap-northeast-2.amazonaws.com/_IMG_1880.jpeg', 5, 4, 5, 2, 1);
+
+SELECT * FROM review;
+
+INSERT INTO combo (menuCount, optionCount, menuListId, reviewId) VALUES
+(1, 1, 1, 3),
+(1, 5, 3, 3);
+	  
+-- 14. 리뷰 수정
+UPDATE review 
+   SET reviewContents = '리뷰 수정'
+ WHERE reviewId = 3;
+ 
+SELECT * FROM review;
+
+-- 15. 리뷰 삭제
+-- 1) 코멘트가 달려있는 경우
+UPDATE review
+   SET reviewTitle = '',
+       reviewContents = '삭제된 리뷰입니다.',
+       userId = NULL
+ WHERE reviewId = 3;
+
+-- 2) 코멘트가 달려있지 않은 경우
+DELETE FROM review WHERE reviewId = 3;
+
+SELECT * FROM review;
+
+-- 16. 내 리뷰 조회
+SELECT * FROM review WHERE userId = 2;
