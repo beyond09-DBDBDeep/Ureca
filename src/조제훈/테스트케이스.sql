@@ -660,16 +660,10 @@ BEGIN
     UPDATE cafe_menu
     SET menuReviewCount = menuReviewCount - 1
     WHERE menuId = (SELECT menuId FROM cafe_menu WHERE cafeMenuId = OLD.cafeMenuId);
-END$$
 
 DELIMITER ;
 
 DELETE FROM cafe_menu_review WHERE cafeMenuId = 1 AND reviewId = 1;
-
-SELECT menuId, COUNT(reviewId) AS reviewCount
-FROM review
-GROUP BY menuId;
-
 
 -- 카페 찜 기능
 DELIMITER $$
@@ -684,6 +678,7 @@ BEGIN
 END$$
 
 DELIMITER ;
+
 DELIMITER $$
 
 CREATE TRIGGER decrease_favorite_count
