@@ -9,10 +9,13 @@
 ![Ubuntu](https://img.shields.io/badge/ubuntu-orange?style=for-the-badge&logo=ubuntu)
 ![linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=linux)
 ![mariadb](https://img.shields.io/badge/mariadb-gray?style=for-the-badge&logo=mariadb)
+
+#### 협업 툴
 ![git](https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)
 ![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 ![discord](https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+
 
 ### 전체 프로젝트 일정
 <details> 
