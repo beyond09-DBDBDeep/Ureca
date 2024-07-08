@@ -206,7 +206,7 @@ SELECT options.optionName AS '옵션명'
 -- 10. 즐겨찾기 추가
 DELIMITER $$
 CREATE OR REPLACE TRIGGER count_bookmarks_for_menu
-AFTER INSERT OR DELETE ON combo
+AFTER INSERT ON combo
 FOR EACH ROW
 BEGIN
     DECLARE menu_id INT;
@@ -215,6 +215,32 @@ BEGIN
     SELECT C.menuId INTO menu_id
     FROM menu_list AS C
     WHERE C.menuListId = NEW.menuListId;
+
+    -- menuId가 유효한 경우에만 업데이트 수행
+    IF menu_id IS NOT NULL THEN
+        UPDATE cafe_menu AS A
+        SET A.menuBookmarkCount = (
+            SELECT COUNT(DISTINCT B.bookmarkId)
+            FROM combo AS B
+            JOIN menu_list AS C ON B.menuListId = C.menuListId
+            WHERE C.menuId = menu_id
+        )
+        WHERE A.menuId = menu_id;
+    END IF;
+END $$
+DELIMITER ;
+
+DELIMITER $$
+CREATE OR REPLACE TRIGGER count_bookmarks_for_menu
+AFTER DELETE ON combo
+FOR EACH ROW
+BEGIN
+    DECLARE menu_id INT;
+
+    -- 새로 삽입된 레코드와 연결된 menuId를 가져옵니다.
+    SELECT C.menuId INTO menu_id
+    FROM menu_list AS C
+    WHERE C.menuListId = OLD.menuListId;
 
     -- menuId가 유효한 경우에만 업데이트 수행
     IF menu_id IS NOT NULL THEN
@@ -609,6 +635,42 @@ SELECT
     ON b.cafeMenuId = c.cafeMenuId
  WHERE c.menuId = 1;
  
+-- 메뉴에 대한 리뷰 카운트
+DELIMITER $$
+
+CREATE OR REPLACE TRIGGER increase_review_count
+AFTER INSERT ON cafe_menu_review
+FOR EACH ROW
+BEGIN
+    UPDATE cafe_menu
+    SET menuReviewCount = menuReviewCount + 1
+    WHERE menuId = (SELECT menuId FROM cafe_menu WHERE cafeMenuId = NEW.cafeMenuId);
+END$$
+
+DELIMITER ;
+
+INSERT INTO cafe_menu_review (cafeMenuId, reviewId) VALUES (1, 1);
+
+DELIMITER $$
+
+CREATE OR REPLACE TRIGGER decrease_review_count
+AFTER DELETE ON cafe_menu_review
+FOR EACH ROW
+BEGIN
+    UPDATE cafe_menu
+    SET menuReviewCount = menuReviewCount - 1
+    WHERE menuId = (SELECT menuId FROM cafe_menu WHERE cafeMenuId = OLD.cafeMenuId);
+END$$
+
+DELIMITER ;
+
+DELETE FROM cafe_menu_review WHERE cafeMenuId = 1 AND reviewId = 1;
+
+SELECT menuId, COUNT(reviewId) AS reviewCount
+FROM review
+GROUP BY menuId;
+
+
 -- 카페 찜 기능
 DELIMITER $$
 
