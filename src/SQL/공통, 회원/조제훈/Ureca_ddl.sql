@@ -195,6 +195,16 @@ CREATE TABLE cafe_menu_review (
 	ON DELETE CASCADE
 );
 
+CREATE TABLE cafe_menu_bookmark (
+	cafeMenuId BIGINT,
+	bookmarkId BIGINT,
+	PRIMARY KEY (cafeMenuId, bookmarkId),
+	FOREIGN KEY (cafeMenuId) REFERENCES cafe_menu(cafeMenuId)
+	ON DELETE CASCADE,
+	FOREIGN KEY (bookmarkId) REFERENCES bookmark(bookmarkId)
+	ON DELETE CASCADE
+);
+
 CREATE TABLE comment (
     commentId BIGINT PRIMARY KEY AUTO_INCREMENT,
     commentContents VARCHAR(3000) NOT NULL,

@@ -219,29 +219,16 @@ SELECT options.optionName AS '옵션명'
   
 -- 10. 즐겨찾기 추가
 DELIMITER $$
-CREATE OR REPLACE TRIGGER plus_bookmarks_for_menu
-AFTER INSERT ON combo
+
+CREATE OR REPLACE TRIGGER increase_bookmark_count
+AFTER INSERT ON cafe_menu_bookmark
 FOR EACH ROW
 BEGIN
-    DECLARE menu_id INT;
+    UPDATE cafe_menu
+    SET menuBookmarkCount = menuBookmarkCount + 1
+    WHERE menuId IN (SELECT menuId FROM cafe_menu WHERE cafeMenuId = NEW.cafeMenuId);
+END$$
 
-    -- 새로 삽입된 레코드와 연결된 menuId를 가져옵니다.
-    SELECT C.menuId INTO menu_id
-    FROM menu_list AS C
-    WHERE C.menuListId = NEW.menuListId;
-
-    -- menuId가 유효한 경우에만 업데이트 수행
-    IF menu_id IS NOT NULL THEN
-        UPDATE cafe_menu AS A
-        SET A.menuBookmarkCount = (
-            SELECT COUNT(DISTINCT B.bookmarkId)
-            FROM combo AS B
-            JOIN menu_list AS C ON B.menuListId = C.menuListId
-            WHERE C.menuId = menu_id
-        )
-        WHERE A.menuId = menu_id;
-    END IF;
-END $$
 DELIMITER ;
 
 SELECT * FROM bookmark;
@@ -271,6 +258,8 @@ INSERT INTO combo (menuCount, optionCount, menuListId, bookmarkId) VALUES
 
 SELECT * FROM combo;
 
+INSERT INTO cafe_menu_bookmark (cafeMenuId, bookmarkId) VALUES (1, 1);
+
 SELECT * FROM cafe_menu WHERE menuId = 1;
 
 -- 11. 즐겨찾기 수정
@@ -291,28 +280,14 @@ SELECT * FROM bookmark;
 
 -- 12. 즐겨찾기 삭제
 DELIMITER $$
-CREATE OR REPLACE TRIGGER minus_bookmarks_for_menu
-AFTER DELETE ON combo
+
+CREATE OR REPLACE TRIGGER decrease_bookmark_count
+AFTER DELETE ON cafe_menu_bookmark
 FOR EACH ROW
 BEGIN
-    DECLARE menu_id INT;
-
-    -- 새로 삽입된 레코드와 연결된 menuId를 가져옵니다.
-    SELECT C.menuId INTO menu_id
-    FROM menu_list AS C
-    WHERE C.menuListId = OLD.menuListId;
-
-    -- menuId가 유효한 경우에만 업데이트 수행
-    IF menu_id IS NOT NULL THEN
-        UPDATE cafe_menu AS A
-        SET A.menuBookmarkCount = (
-            SELECT COUNT(DISTINCT B.bookmarkId)
-            FROM combo AS B
-            JOIN menu_list AS C ON B.menuListId = C.menuListId
-            WHERE C.menuId = menu_id
-        )
-        WHERE A.menuId = menu_id;
-    END IF;
+    UPDATE cafe_menu
+    SET menuBookmarkCount = menuBookmarkCount - 1
+    WHERE menuId IN (SELECT menuId FROM cafe_menu WHERE cafeMenuId = OLD.cafeMenuId);
 END $$
 DELIMITER ;
 
@@ -321,6 +296,8 @@ SELECT * FROM bookmark;
 SELECT * FROM cafe_menu WHERE menuId = 1;
 
 DELETE FROM bookmark WHERE bookmarkId = 5;
+
+DELETE FROM cafe_menu_bookmark WHERE cafeMenuId = 1 AND bookMarkId = 1;
 
 SELECT * FROM bookmark;
 
