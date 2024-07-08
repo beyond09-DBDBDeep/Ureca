@@ -480,13 +480,7 @@
 
 ---
 
-### 5.2 프로젝트 수행 일정
-
-
-
----
-
-### 5.3 프로젝트 수행 방법
+### 5.2 프로젝트 수행 방법
 
 ![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/105059540/6f2c805a-dbc8-467c-bcf6-f977c26e2d0a)
 
