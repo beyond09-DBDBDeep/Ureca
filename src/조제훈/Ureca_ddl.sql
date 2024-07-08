@@ -464,6 +464,9 @@ INSERT review (reviewTitle, reviewContents, reviewDate, reviewPhotoUrl, serviceS
 
 SELECT * FROM review;
 
+INSERT cafe_menu_review (cafeMenuId, reviewId) VALUES
+(1, 1);
+
 INSERT comment (commentContents, commentDate, userId, reviewId) VALUES
 ('ㅋㅋ 감사요 ㅋ 또 오셈 ㅋ', '2020-06-15 17:57:19', 11, 1),
 ('압도적 감사..!', '2021-06-15 17:55:29', 11, 2);
