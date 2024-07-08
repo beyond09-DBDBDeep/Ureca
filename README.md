@@ -2,26 +2,13 @@
 # Ureca
 | Your Recommended Cafe
 
-### 팀원
-- 팀원 : **전기범** 
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/woodart8)
+#### 🌱 TEAM
+[😺전기범](https://github.com/woodart8)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🐕조제훈](https://github.com/JoJeHuni)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🦄최형석](https://github.com/yapheh)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🦎최해관](https://github.com/Haegwan-Choe)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🐈이효진](https://github.com/jinjin0528)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🐢방동호](https://github.com/Bang1999)
 
-- 팀원 : **조제훈**
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/JoJeHuni)
-
-- 팀원 : **최형석**
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/yapheh)
-
-- 팀원 : **최해관**
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Haegwan-Choe)
-
-- 팀원 : **이효진**
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/jinjin0528)
-
-- 팀원 : **방동호**
-[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Bang1999)
-
-
+#### 🚀 Use Tech
+![Ubuntu](https://img.shields.io/badge/ubuntu-orange?style=for-the-badge&logo=ubuntu)
+![linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=linux)
+![mariadb](https://img.shields.io/badge/mariadb-gray?style=for-the-badge&logo=mariadb)
 
 ### 목차
 
