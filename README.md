@@ -287,6 +287,7 @@
 
 ---
 ### 5.2 프로젝트 수행 일정
+![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/1ce0b1e9-4adb-4ce4-8a09-942aeef1e638)
 
 ---
 ## 6. 참고 문헌
