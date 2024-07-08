@@ -9,10 +9,13 @@
 ![Ubuntu](https://img.shields.io/badge/ubuntu-orange?style=for-the-badge&logo=ubuntu)
 ![linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=linux)
 ![mariadb](https://img.shields.io/badge/mariadb-gray?style=for-the-badge&logo=mariadb)
+
+#### 협업 툴
 ![git](https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)
 ![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 ![discord](https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+
 
 ### 전체 프로젝트 일정
 <details> 
@@ -485,6 +488,11 @@
 
 ### 5.3 프로젝트 수행 방법
 
+![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/105059540/6f2c805a-dbc8-467c-bcf6-f977c26e2d0a)
+
+Ubuntu Linux를 이용하여 DB 서버를 Master-Slave 형태로 Replication하였고,
+
+권한 설정을 통해 Slave는 SELECT만 처리하게 하고, 나머지 쿼리는 Master가 처리하게 하여 서버의 부하를 줄였다.
 
 ---
 ## 6. 팀 회고
