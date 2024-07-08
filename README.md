@@ -360,6 +360,8 @@
          <details>
          <summary><b>6-1. 메뉴 등록</b></summary>
          <p><img src="sample_data/testcase/사업자/사업자 06. 메뉴 등록.gif"/></p>
+         </details>
+         <details>
          <summary><b>6-2. 메뉴 등록 추가 설명 사진</b></summary>
          <p><img src="sample_data/testcase/사업자/사업자 06. 메뉴 등록 추가 설명 사진.png"/></p>
          </details>
@@ -409,8 +411,6 @@
 
 ***
 
-
----
 
 ## 5. 프로젝트 수행 체계
 
