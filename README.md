@@ -2,6 +2,28 @@
 # Ureca
 | Your Recommended Cafe
 
+### 팀명: 얼리멀리(Early&amp;Far) 3조
+### 팀원
+- 팀원 : **전기범** 
+[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/woodart8)
+
+- 팀원 : **조제훈**
+[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/JoJeHuni)
+
+- 팀원 : **최형석**
+[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/yapheh)
+
+- 팀원 : **최해관**
+[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Haegwan-Choe)
+
+- 팀원 : **이효진**
+[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/jinjin0528)
+
+- 팀원 : **방동호**
+[<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/Bang1999)
+
+
+
 ### 목차
 
 - [1. 프로젝트 개요](#1-프로젝트-개요)
