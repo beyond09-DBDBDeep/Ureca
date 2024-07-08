@@ -338,7 +338,7 @@
          <p><img src="sample_data/testcase/회원/9_옵션조회.gif"/></p>
          </details>
      <details>
-         <summary><b>10. ★★★★즐겨찾기 추가</b></summary>
+         <summary><b>10. 즐겨찾기 추가</b></summary>
          <p><img src="sample_data/testcase/회원/10_즐겨찾기.gif"/></p>
 	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
          </details>
