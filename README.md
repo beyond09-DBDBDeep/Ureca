@@ -358,7 +358,15 @@
      <details>
          <summary><b>14. 리뷰 삭제, 내 리뷰 조회</b></summary>
          <p><img src="sample_data/testcase/회원/15,16_리뷰.gif"/></p>
-         </details>    
+         </details>
+    <details>
+         <summary><b>15. 메뉴별 리뷰 조회</b></summary>
+         <p><img src="sample_data/testcase/회원/17_메뉴별 리뷰 조회.gif"/></p>
+         </details>
+    <details>
+         <summary><b>16. 카페 찜 추가 및 삭제</b></summary>
+         <p><img src="sample_data/testcase/회원/18_카페 찜 추가 및 삭제.gif"/></p>
+         </details>     
     </div>
 </details>
 
@@ -426,15 +434,25 @@
 <summary><b>관리자</b></summary>
     <div>
 	 <details>
-         <summary><b>1. 결제하기</b></summary>
-         <p><img src="PNG/Captures/payment/결제_결제하기1.png"/></p>
-         <p><img src="PNG/Captures/payment/결제_결제하기2.png"/></p>
+         <summary><b>1. 블랙리스트 회원 관리</b></summary>
+         <p><img src="sample_data/testcase/관리자/01_블랙리스트 회원 관리.gif"/></p>
          </details>
 	 <details>
-         <summary><b>2. 결제내역 확인</b></summary>
-         <p><img src="PNG/Captures/payment/결제_결제내역확인1.png"/></p>
-         <p><img src="PNG/Captures/payment/결제_결제내역확인2.png"/></p>
+         <summary><b>2. 휴면 계정 관리</b></summary>
+         <p><img src="sample_data/testcase/관리자/02_휴면 계정 관리.gif"/></p>
          </details>
+   <details>
+         <summary><b>3. 탈퇴 회원 관리</b></summary>
+         <p><img src="sample_data/testcase/관리자/03_탈퇴 회원 관리.gif"/></p>
+         </details>
+  <details>
+         <summary><b>4. 매장 관리</b></summary>
+         <p><img src="sample_data/testcase/관리자/04_매장관리.gif"/></p>
+         </details>
+ <details>
+         <summary><b>5. 메뉴에 대한 리뷰 카운트</b></summary>
+         <p><img src="sample_data/testcase/관리자/05_메뉴에 대한 리뷰 카운트.gif"/></p>
+         </details>        
     </div>
 </details>
 
