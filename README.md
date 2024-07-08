@@ -386,8 +386,7 @@
 	 <details>
          <summary><b>12. 코멘트 등록, 수정, 삭제</b></summary>
          <p><img src="sample_data/testcase/사업자/사업자 12. 코멘트 등록, 수정, 삭제.gif"/></p>
-         </details>   
-         
+         </details>    
     </div>
 </details>
 
@@ -409,38 +408,7 @@
 </details>
 
 ***
-<details>
-<summary><b>💱환불</b></summary>
-    <div>
-         <details>
-         <summary><b>1. 환불 신청</b></summary>
-         <p><img src="PNG/Captures/refund/환불_환불신청1.png"/></p>
-	 <p><img src="PNG/Captures/refund/환불_환불신청2.png"/></p>
-         </details>
-         <details>
-         <summary><b>2. 환불 완료</b></summary>
-         <p><img src="PNG/Captures/refund/환불_환불완료1.png"/></p>
-	 <p><img src="PNG/Captures/refund/환불_환불완료2.png"/></p>
-         </details>
-         <details>
-         <summary><b>3. 환불내역 확인</b></summary>
-         <p><img src="PNG/Captures/refund/환불_환불내역확인1.png"/></p>
-	 <p><img src="PNG/Captures/refund/환불_환불내역확인12.png"/></p>
-         </details>
-         <details>
-         <summary><b>4. 초대장템플릿별 환불내역 확인</b></summary>
-         <p><img src="PNG/Captures/refund/환불_초대장템플릿별환불내역확인1.png"/></p>
-	 <p><img src="PNG/Captures/refund/환불_초대장템플릿별환불내역확인2.png"/></p>
-         </details>
-         <details>
-         <summary><b>5. 선물별 환불 내역 확인</b></summary>
-         <p><img src="PNG/Captures/refund/환불_선물별환불내역확인1.png"/></p>
-	 <p><img src="PNG/Captures/refund/환불_선물별환불내역확인2.png"/></p>
-         </details>
-    </div>
-</details>
 
-***
 
 ---
 
