@@ -3,7 +3,7 @@
 | Your Recommended Cafe
 
 #### 🌱 TEAM
-[😺전기범](https://github.com/woodart8)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🐕조제훈](https://github.com/JoJeHuni)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🦄최형석](https://github.com/yapheh)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🦎최해관](https://github.com/Haegwan-Choe)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🐈이효진](https://github.com/jinjin0528)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🐢방동호](https://github.com/Bang1999)
+[😺전기범](https://github.com/woodart8)&nbsp;&nbsp;&nbsp;&nbsp;[🐕조제훈](https://github.com/JoJeHuni)&nbsp;&nbsp;&nbsp;&nbsp;[🐢방동호](https://github.com/Bang1999)&nbsp;&nbsp;&nbsp;&nbsp;[🦎최해관](https://github.com/Haegwan-Choe)&nbsp;&nbsp;&nbsp;&nbsp;[🐈이효진](https://github.com/jinjin0528)
 
 #### 🚀 Use Tech
 ![Ubuntu](https://img.shields.io/badge/ubuntu-orange?style=for-the-badge&logo=ubuntu)
@@ -435,16 +435,15 @@
 
 ### 5.1 팀원 인적사항
 
-
-
 | 이름   | 전공                      | 희망직무                    | MBTI | Email                                               |
 | ------ | ------------------------- | --------------------------- | ---- | --------------------------------------------------- |
 | 전기범 | 소프트웨어학부            | 웹 풀스택 개발자            | INFJ | [kibeom1145@gmail.com](mailto:kibeom1145@gmail.com) |
 | 조제훈 | 컴퓨터공학부              | 백엔드 개발자               | ESFJ | [cho9759@inu.ac.kr](mailto:cho9759@inu.ac.kr)       |
-| 최형석 | 컴퓨터공학과              | 백엔드 개발자               | INFJ | [gudtjr5666@gmail.com](mailto:gudtjr5666@gmail.com) |
 | 최해관 | 불교학부/융합소프트웨어   | PM / 백엔드 개발자          | ENTJ | [kkhagwan@naver.com](mailto:kkhagwan@naver.com)     |
-| 이효진 | 국어국문학과/컴퓨터공학과 | 데이터 보안 / 백엔드 개발자 | INFJ |             jin12lee@naver.com                                   |
-| 방동호 | 모바일시스템공학과        | 백엔드 개발자               | INFP | bangdh1593@gmail.com                                 |
+| 이효진 | 국어국문학과/컴퓨터공학과 | 데이터 보안 / 백엔드 개발자 | INFJ | jin12lee@naver.com                                  |
+| 방동호 | 모바일시스템공학과        | 백엔드 개발자               | INFP | bangdh1593@gmail.com                                |
+
+
 
 ---
 ### 5.2 프로젝트 수행 일정
