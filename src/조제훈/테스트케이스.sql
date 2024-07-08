@@ -72,7 +72,7 @@ SELECT * FROM loginhistory;
 
 SELECT
        userId
-     , loginFailCount
+     , loginFailCount AS '로그인 실패 횟수'
   FROM users;
 
 INSERT INTO loginhistory
@@ -96,14 +96,14 @@ SELECT
   
 -- 2) 블랙리스트인 경우
 SELECT
-		 users.blackUserStatus
+		 users.blackUserStatus AS '블랙 여부'
   FROM users
  WHERE users.email = ('gimogsun@baggimgim.com')
    AND users.userPassword = ('_2^SCggngR');
    
 -- 3) 탈퇴 회원인 경우
 SELECT
-		 users.userQuitStatus
+		 users.userQuitStatus AS '탈퇴 여부'
   FROM users
  WHERE users.email = ('coseong@naver.com')
    AND users.userPassword = ('D4F*&FjLc$');
