@@ -290,46 +290,66 @@
     <div>
          <details>
          <summary><b>1. 회원가입</b></summary>
-         <p><img src="PNG/Captures/user/회원_회원가입1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_회원가입2.png"/></p>
+         <p><img src="sample_data/testcase/회원/1_회원가입.gif"/></p>
          </details>
 	 <details>
-         <summary><b>2. 비밀번호 찾기</b></summary>
+         <summary><b>2. ★★★★로그인 성공</b></summary>
          <p><img src="PNG/Captures/user/회원_비밀번호_찾기1.png"/></p>
 	 <p><img src="PNG/Captures/user/회원_비밀번호_찾기2.png"/></p>
          </details>
 	 <details>
-         <summary><b>3. 회원정보 수정</b></summary>
+         <summary><b>3. ★★★★로그인 실패</b></summary>
          <p><img src="PNG/Captures/user/회원_회원정보_수정1.png"/></p>
 	 <p><img src="PNG/Captures/user/회원_회원정보_수정2.png"/></p>
          </details>
 	 <details>
-         <summary><b>4. 회원 탈퇴</b></summary>
-         <p><img src="PNG/Captures/user/회원_회원_탈퇴1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_회원_탈퇴2.png"/></p>
+         <summary><b>4. 아이디 찾기</b></summary>
+         <p><img src="sample_data/testcase/회원/4_아이디찾기.gif"/></p>
          </details>
 	 <details>
-         <summary><b>5. 초대 내역 확인</b></summary>
-         <p><img src="PNG/Captures/user/회원_초대내역확인_초대받았을때1.png"/></p>
-         <p><img src="PNG/Captures/user/회원_초대내역확인_초대받았을때2.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_초대내역확인_초대했을때1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_초대내역확인_초대했을때2.png"/></p>
+         <summary><b>5. 비밀번호 찾기</b></summary>
+         <p><img src="sample_data/testcase/회원/5_비밀번호찾기.gif"/></p>
          </details>
 	 <details>
-         <summary><b>6. 회원 상태 관리</b></summary>
-         <p><img src="PNG/Captures/user/회원_회원상태관리1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_회원상태관리2.png"/></p>
+         <summary><b>6. 비밀번호 수정</b></summary>
+         <p><img src="sample_data/testcase/회원/6_비밀번호수정.gif"/></p>
          </details>
 	 <details>
-         <summary><b>7. 회원ID 검색</b></summary>
-         <p><img src="PNG/Captures/user/회원_회원ID검색1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_회원ID검색2.png"/></p>
+         <summary><b>7. 매장 조회</b></summary>
+         <p><img src="sample_data/testcase/회원/7_매장조희.gif"/></p>
          </details>				 
 	 <details>
-         <summary><b>8. 닉네임 검색</b></summary>
+         <summary><b>8. 메뉴 조회</b></summary>
+         <p><img src="sample_data/testcase/회원/8_메뉴조회.gif"/></p>
+         </details>
+     <details>
+         <summary><b>9. 옵션 조회</b></summary>
+         <p><img src="sample_data/testcase/회원/9_옵션조회.gif"/></p>
+         </details>
+     <details>
+         <summary><b>10. ★★★★즐겨찾기 추가</b></summary>
+         <p><img src="sample_data/testcase/회원/10_즐겨찾기.gif"/></p>
+	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
+         </details>
+     <details>
+         <summary><b>11. ★★★★즐겨찾기 수정</b></summary>
          <p><img src="PNG/Captures/user/회원_닉네임검색1.png"/></p>
 	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
          </details>
+     <details>
+         <summary><b>12. ★★★★즐겨찾기 삭제</b></summary>
+         <p><img src="PNG/Captures/user/회원_닉네임검색1.png"/></p>
+	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
+         </details>
+     <details>
+         <summary><b>13. 리뷰 추가, 수정</b></summary>
+         <p><img src="sample_data/testcase/회원/13,14_리뷰.gif"/></p>
+         </details>
+     <details>
+         <summary><b>14. 리뷰 삭제, 내 리뷰 조회</b></summary>
+         <p><img src="sample_data/testcase/회원/15,16_리뷰.gif"/></p>
+         </details>
+     
     </div>
 </details>
 
@@ -362,7 +382,7 @@
          <p><img src="sample_data/testcase/사업자/사업자 06. 메뉴 등록.gif"/></p>
          </details>
          <details>
-         <summary><b>6-2. 메뉴 등록 추가 설명 사진</b></summary>
+         <summary><b>6-2. 메뉴 등록 추가 설명</b></summary>
          <p><img src="sample_data/testcase/사업자/사업자 06. 메뉴 등록 추가 설명 사진.png"/></p>
          </details>
          <details>
