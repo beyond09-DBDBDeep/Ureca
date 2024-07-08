@@ -223,11 +223,11 @@ CREATE TABLE combo (
     menuListId BIGINT NOT NULL,
     bookmarkId BIGINT,
     FOREIGN KEY (reviewId) REFERENCES review(reviewId)
-    ON DELETE SET NULL,
+    ON DELETE CASCADE,
     FOREIGN KEY (menuListId) REFERENCES menu_list(menuListId)
     ON DELETE CASCADE,
     FOREIGN KEY (bookmarkId) REFERENCES bookmark(bookmarkId)
-    ON DELETE SET NULL
+    ON DELETE CASCADE
 );
 
 -- 데이터 삽입
@@ -478,9 +478,9 @@ SELECT * FROM comment;
 INSERT combo (menuCount, optionCount, reviewId, menuListId, bookmarkId) VALUES
 (1, 1, 1, 1, NULL), -- 에스프레소 핫
 (1, 2, 1, 2, NULL), -- 에스프레소 샷 추가 2회
-(1, 1, NULL, 4, NULL), -- 아메리카노 아이스
-(1, 1, NULL, 6, NULL), -- 아메리카노 얼음 보통
-(1, 1, NULL, 8, NULL), -- 아메리카노 기본 샷
+(1, 1, NULL, 4, 2), -- 아메리카노 아이스
+(1, 1, NULL, 6, 2), -- 아메리카노 얼음 보통
+(1, 1, NULL, 8, 2), -- 아메리카노 기본 샷
 (1, 1, NULL, 4, 1), -- 아메리카노 아이스
 (1, 1, NULL, 6, 1), -- 아메리카노 얼음 보통
 (1, 1, NULL, 8, 1); -- 아메리카노 기본 샷
