@@ -28,17 +28,6 @@ SELECT
  WHERE users.email = ('vba123g@yu.org')
    AND users.userPassword = ('wrBlSOYi)4');
 
-SELECT * FROM users WHERE users.userQuitStatus != 1;
-SELECT * FROM users WHERE users.blackUserStatus != 1;
-
-SELECT
-		 *
-	FROM dormant_users
-  WHERE dormant_users.email = ('vba123g@yu.org')
-    AND dormant_users.userPassword = ('wrBlSOYi)4');
-
-
-
 SELECT * FROM loginhistory;
 
 INSERT INTO loginhistory
@@ -112,12 +101,88 @@ SELECT
  WHERE users.email = ('gimogsun@baggimgim.com')
    AND users.userPassword = ('_2^SCggngR');
    
--- 3) 계정 탈퇴인 경우
+-- 3) 탈퇴 회원인 경우
 SELECT
 		 users.userQuitStatus
   FROM users
  WHERE users.email = ('coseong@naver.com')
    AND users.userPassword = ('D4F*&FjLc$');
+   
+-- 4) 휴면 회원인 경우
+SELECT
+		 *
+  FROM dormant_users
+ WHERE dormant_users.email = ('chuyeji@naver.com')
+   AND dormant_users.userPassword = ('asdf(&^1');
+   
+INSERT INTO users 
+(
+  SELECT
+  		   *
+    FROM dormant_users
+   WHERE dormant_users.email = ('chuyeji@naver.com')
+     AND dormant_users.userPassword = ('asdf(&^1')
+);
+   
+DELETE 
+  FROM dormant_users
+ WHERE dormant_users.email = ('chuyeji@naver.com')
+   AND dormant_users.userPassword = ('asdf(&^1');
 
 -- 4. 아이디 찾기
+SELECT 
+	 	 users.email AS 'ID'
+  FROM users
+ WHERE users.userName = ('남정호')
+   AND users.phone = ('031-735-9824');
 
+-- 5. 비밀번호 찾기
+SELECT 
+	    users.userPassword AS 'PassWord'
+  FROM users
+ WHERE users.email = ('vbag@yu.org')
+   AND users.userName = ('남정호')
+   AND users.phone = ('031-735-9824');
+
+-- 6. 비밀번호 수정
+UPDATE users
+   SET users.userPassword = '1234ABCDEF!@#'
+ WHERE userId = 2;
+ 
+SELECT userId
+     , userName
+     , userPassword
+  FROM users
+ WHERE userId = 2;
+ 
+--  7. 매장 조회
+SELECT * FROM cafe;
+
+SELECT cafeName AS '카페명'
+	  , cafeAddress AS '주소'
+	  , cafePhone AS '전화번호'
+	  , cafeOpenStatus AS '오픈 여부'
+	  , ROUND((cafeServiceScore + cafeFlavorScore + cafeMoodScore)/3.0, 2) AS 평점
+  FROM cafe;
+  
+-- 8. 메뉴 조회
+SELECT 
+		 menu.menuName AS '메뉴명'
+	  , cafe_menu.menuPrice AS '메뉴 가격'
+  FROM cafe
+  JOIN cafe_menu
+    ON cafe.cafeId = cafe_menu.cafeId
+  JOIN menu
+    ON cafe_menu.menuId = menu.menuId
+ WHERE cafe.cafeId = 1;
+ 
+-- 9. 옵션 조회
+SELECT options.optionName AS '옵션명'
+	  , cafe_option.optionContents AS '옵션내용'
+	  , cafe_option.optionPrice AS '옵션 가격'
+  FROM cafe
+  JOIN cafe_option
+    ON cafe.cafeId = cafe_option.cafeId
+  JOIN options
+    ON cafe_option.optionId = options.optionId
+ WHERE cafe.cafeId = 1;

@@ -247,6 +247,11 @@ INSERT INTO users (userType, userName, email, userPassword, phone, gender, birth
 
 SELECT * FROM users;
 
+INSERT INTO dormant_users (userId, userType, userName, email, userPassword, phone, gender, birth, address, latitude, longitude, loginFailCount, businessRegNo, blackUserStatus, blackRegDate, blackReason, userQuitStatus, userQuitDate, userQuitReason) VALUES
+(99,'일반', '추예지', 'chuyeji@naver.com', 'asdf(&^1', '047-765-4321', '여성', '1988-11-15', '대전광역시 중구 도산대로', 35.7236505735, 128.6512347952, 0, NULL, FALSE, NULL, NULL, TRUE, NULL, NULL),
+(100, '일반', '이은정', 'yeeyeeyee@yu.com', 'j;kl123@', '032-622-5413', '여성', '1990-01-08', '서울특별시 종로구 언주28길', 33.1683318551, 124.9577501406, 4, NULL, FALSE, NULL, NULL, TRUE, NULL, NULL);
+
+
 INSERT INTO cafe (cafeName, cafeAddress, cafePhone, cafeOpenStatus, cafeServiceScore, cafeFlavorScore, cafeMoodScore, latitude, longitude, franchise, userId) VALUES
 ('카페 오은지', '부산광역시 북구 가산디지털2로 33', '02-777-8889', TRUE, 4.2, 4.3, 4.4, 34.9876543213, 129.1234567890, FALSE, 11),
 ('카페 조정호 본점', '인천광역시 서구 서곶로 45', '010-7356-9825', TRUE, 3.8, 4.1, 4.0, 40.2540433624, 126.9871076546, TRUE, 12),
