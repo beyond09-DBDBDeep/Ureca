@@ -251,7 +251,8 @@
 
 #### (1) 개념 모델
 
-![image](sample_data/conModel.png)
+![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/e077e60f-6029-4a65-9e29-e5dad91c716a)
+
 
 #### (2) 논리 모델
 
