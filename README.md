@@ -167,7 +167,8 @@
 
 ### 3.1 FLOW CHARTS
 
-![Uploading image.png…]()
+![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/172617658/1f1ae2f3-4fa3-4769-8dcf-062ce183d5a8)
+
 
 
 ---
