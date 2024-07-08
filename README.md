@@ -10,6 +10,16 @@
 ![linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=linux)
 ![mariadb](https://img.shields.io/badge/mariadb-gray?style=for-the-badge&logo=mariadb)
 
+### 전체 프로젝트 일정
+<details> 
+<summary>프로젝트 일정 : 2024년 07월 01일 ~ 2024년 07월 09일(WBS)</summary>
+  <div align="center">
+    <img src="" alt="">
+    <p align="center">WBS</p>
+  </div>
+
+</details>
+
 ### 목차
 
 - [1. 프로젝트 개요](#1-프로젝트-개요)
