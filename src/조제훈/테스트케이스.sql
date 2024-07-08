@@ -609,6 +609,37 @@ SELECT
     ON b.cafeMenuId = c.cafeMenuId
  WHERE c.menuId = 1;
  
+-- 메뉴에 대한 리뷰 카운트
+DELIMITER $$
+
+CREATE TRIGGER increase_review_count
+AFTER INSERT ON review
+FOR EACH ROW
+BEGIN
+    UPDATE menu
+    SET reviewCount = reviewCount + 1
+    WHERE menuId = NEW.menuId;
+END$$
+
+DELIMITER ;
+DELIMITER $$
+
+CREATE TRIGGER increase_review_count
+AFTER INSERT ON review
+FOR EACH ROW
+BEGIN
+    UPDATE menu
+    SET reviewCount = reviewCount - 1
+    WHERE menuId = NEW.menuId;
+END$$
+
+DELIMITER ;
+
+SELECT menuId, COUNT(reviewId) AS reviewCount
+FROM review
+GROUP BY menuId;
+
+
 -- 카페 찜 기능
 DELIMITER $$
 
