@@ -17,7 +17,8 @@
 
 ### 1.1 프로젝트 소개
 
-![](sample_data/introImg.png)
+![Untitled (4)](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/131890fa-734c-4b28-b077-1b8b8c5efbdb) |![Untitled (5)](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/36c4ac70-0fbc-445b-83bf-baf423aa17b5)
+--- | --- | 
 
 **처음 가는 카페에서 어떤 음료를 마실지 고민하시는 모든 분들!**
 
