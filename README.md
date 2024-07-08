@@ -1,4 +1,4 @@
-![](sample_data/banner.png)
+![](sample_data/img/banner.png)
 # Ureca
 | Your Recommended Cafe
 
@@ -50,7 +50,7 @@
 ---
 ### 1.2 프로젝트 배경
 
-![](sample_data/img1.png)
+![](sample_data/img/img1.png)
 
 <그림 1> “한국 커피 전문점 매장 추이
 
@@ -58,7 +58,7 @@
 
 카페는 프랜차이즈와 개인 카페로 나뉘는데, 프랜차이즈에는 스타벅스, 커피빈, 메가 커피 등 큰 규모의 카페이고, 개인 카페는 주로 주거 지역이나 핫플레이스 근처의 골목에 위치한 개인 카페이다.
 
-![](sample_data/img2.png)
+![](sample_data/img/img2.png)
 
 <그림 2> 카페 1회 방문 시 평균 지출 금액
 
@@ -66,7 +66,7 @@
 
 반면 개인 카페는 규모가 작기 때문에 커피 가격을 낮추는데 한계가 있다. 실제로, 평균 지출 금액을 비교해보면, 대형 프랜차이즈 카페의 가격이 더 경쟁력 있다는 것을 알 수 있다.
 
-![](sample_data/img3.png)
+![](sample_data/img/img3.png)
 
 <그림 3> 개인 카페를 선호하는 이유
 
