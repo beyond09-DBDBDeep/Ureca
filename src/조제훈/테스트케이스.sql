@@ -600,3 +600,13 @@ END$$
 DELIMITER ;
 
 SELECT * FROM users;
+
+-- 메뉴에서 리뷰 조회
+SELECT
+		 a.*
+  FROM review a
+  JOIN cafe_menu_review b
+    ON a.reviewId = b.reviewId
+  JOIN cafe_menu c
+    ON b.cafeMenuId = c.cafeMenuId
+ WHERE c.menuId = 1;
