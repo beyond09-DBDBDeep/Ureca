@@ -21,7 +21,18 @@ VALUES
 
 SELECT users.userName FROM users;
 
--- 2. 로그인 1이 조회되면 로그인 성공
+-- 2. 로그인 성공
+DELIMITER $$
+CREATE OR REPLACE TRIGGER update_login_history
+AFTER INSERT ON loginHistory
+FOR EACH ROW
+BEGIN
+	 UPDATE users
+	 SET lastLogin = NEW.loginAttemptTime
+	 WHERE userId = NEW.userId;
+END $$
+DELIMITER ;
+
 SELECT
 		 *
   FROM users
@@ -43,6 +54,11 @@ VALUES
 );
 
 SELECT * FROM loginhistory;
+
+SELECT userId
+     , lastLogin
+  FROM users
+ WHERE userId = 13;
 
 -- 3. 로그인 실패
 -- 1) 아이디 비밀번호 틀렸을 경우
@@ -505,4 +521,54 @@ END//
 DELIMITER ; 
 
 -- 매장 삭제 프로시저 호출
-CALL delete_cafe(5); 
+CALL delete_cafe(5);
+
+-- 휴면 계정 전환 스케쥴러
+SELECT * FROM users;
+
+SHOW VARIABLES LIKE 'event%'; 
+SET GLOBAL event_scheduler = ON;
+
+DELIMITER $$
+CREATE OR REPLACE EVENT move_to_dormant
+ON SCHEDULE EVERY 10 SECOND
+STARTS '2024-07-08 15:00:00'
+DO
+BEGIN
+    INSERT INTO dormant_users
+	 (SELECT *
+    	FROM users
+     WHERE lastLogin IS NOT NULL AND lastLogin < NOW() - INTERVAL 6 MONTH);
+
+    DELETE FROM users
+    WHERE lastLogin IS NOT NULL AND lastLogin < NOW() - INTERVAL 6 MONTH;
+END$$
+DELIMITER ;
+
+SELECT * FROM information_schema.events;
+
+UPDATE users
+   SET lastLogin = '2023-07-05 05:05:05'
+ WHERE userId = 3;
+ 
+SELECT * FROM users;
+SELECT * FROM dormant_users; 
+ 
+-- 탈퇴 회원 삭제 스케줄러
+SELECT * FROM users;
+
+SHOW VARIABLES LIKE 'event%'; 
+SET GLOBAL event_scheduler = ON;
+
+DELIMITER $$
+CREATE OR REPLACE EVENT delete_quit_users
+ON SCHEDULE EVERY 10 SECOND
+STARTS '2024-07-08 15:00:00'
+DO
+BEGIN
+    DELETE FROM users
+    WHERE userQuitDate < NOW() - INTERVAL 1 MONTH;
+END$$
+DELIMITER ;
+
+SELECT * FROM users;

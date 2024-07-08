@@ -34,6 +34,7 @@ CREATE TABLE users (
     address VARCHAR(255),
     latitude DECIMAL(13,10),
     longitude DECIMAL(13,10),
+    lastLogin DATETIME,
     loginFailCount INTEGER DEFAULT 0,
     businessRegNo VARCHAR(255),
     blackUserStatus BOOLEAN DEFAULT FALSE,
@@ -56,6 +57,7 @@ CREATE TABLE dormant_users (
     address VARCHAR(255),
     latitude DECIMAL(13,10),
     longitude DECIMAL(13,10),
+    lastLogin DATETIME,
     loginFailCount INTEGER DEFAULT 0,
     businessRegNo VARCHAR(255),
     blackUserStatus BOOLEAN DEFAULT FALSE,
@@ -231,19 +233,19 @@ CREATE TABLE combo (
 );
 
 -- 데이터 삽입
-INSERT INTO users (userType, userName, email, userPassword, phone, gender, birth, address, latitude, longitude, loginFailCount, businessRegNo, blackUserStatus, blackRegDate, blackReason, userQuitStatus, userQuitDate, userQuitReason) VALUES
-('관리자', '유레카', 'admin@admin.com', 'admin123', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('일반', '남정호', 'vbag@yu.org', 'wrBlSOYi)3', '031-735-9824', '여성', '1959-07-10', '서울특별시 서대문구 선릉3길 (은경조진면)', 41.2540433624, 127.9871058576, 3, NULL, FALSE, NULL, NULL, FALSE, NULL, NULL),
-('일반', '장수민', 'cobagsang@yu.org', 'b%Cd%2XyQ', '02-123-4567', '여성', '1982-08-21', '부산광역시 서구 가락로 (지혜이동)', 42.1483473408, 130.4563119673, 0, NULL, FALSE, NULL, NULL, FALSE, NULL, NULL),
-('일반', '강준', 'jijongsu@cho.org', '7Q5^&Q%xQY', '051-888-9999', '여성', '1996-03-25', '인천광역시 동구 올림픽대로', 40.0030446212, 127.9870663598, 2, NULL, FALSE, NULL, NULL, FALSE, NULL, NULL),
-('일반', '최예지', 'coseong@naver.com', 'D4F*&FjLc$', '043-765-4321', '여성', '1991-11-15', '대전광역시 중구 도산대로', 35.7236505735, 128.6512347952, 0, NULL, FALSE, NULL, NULL, TRUE, '2023-07-07 07:07:07', '사용빈도가 낮아서'),
-('일반', '박은정', 'areumjang@yu.com', '%4OT4Wy0%w', '031-622-5413', '남성', '1980-01-08', '서울특별시 종로구 언주28길', 33.1683318551, 124.9577501406, 4, NULL, FALSE, NULL, NULL, TRUE, '2022-02-15 06:43:05', '이용이 불편하고 장애가 많아서'),
-('일반', '이준서', 'baggang@nate.com', 'p*T3s#4BZq', '054-321-9876', '남성', '1976-04-07', '대구광역시 중구 독산동', 37.8709254872, 128.6259886071, 3, NULL, TRUE, '2020-05-05 05:05:05', '테러 조장', FALSE, NULL, NULL),
-('일반', '주지아', 'gimogsun@baggimgim.com', '_2^SCggngR', '042-356-5052', '남성', '1954-01-12', '울산광역시 남구 영동대로 (중수장이마을)', 33.5841375522, 126.0050150198, 1, NULL, TRUE, '2020-06-10 11:35:19', '욕설', FALSE, NULL, NULL),
-('일반', '곽지영', 'eomjongsu@live.com', 'W2)2JRx!AY', '063-076-1164', '남성', '2004-06-19', '울산광역시 서구 서초중앙82가', 37.5764309823, 127.3082269336, 0, NULL, TRUE, '2021-01-01 01:23:45', '음란물', FALSE, NULL, NULL),
-('일반', '김지수', 'jiyoung@ji.com', 'p4F*&FjLc$', '042-111-2222', '여성', '1966-05-17', '광주광역시 남구 언주로', 36.1236444785, 127.9870657542, 2, NULL, TRUE, '2018-08-18 18:18:18', '욕설', FALSE, NULL, NULL),
-('사업자', '오은지', 'ohjung@live.com', 'D4F@jLc*F$', '02-777-8888', '남성', '1979-07-30', '부산광역시 북구 가산디지털2로', 34.9876543213, 129.1234567891, 0, '327894-123874', FALSE, NULL, NULL, FALSE, NULL, NULL),
-('사업자', '조정호', 'vbag1234@yu.org', 'wrBlSOYi)1233', '010-7356-9824', '남성', '1961-07-12', '인천광역시 서구 서곶로', 40.2540433624, 126.9871076546, 0, '800628-145964', FALSE, NULL, NULL, FALSE, NULL, NULL);
+INSERT INTO users (userType, userName, email, userPassword, phone, gender, birth, address, latitude, longitude, lastLogin, loginFailCount, businessRegNo, blackUserStatus, blackRegDate, blackReason, userQuitStatus, userQuitDate, userQuitReason) VALUES
+('관리자', '유레카', 'admin@admin.com', 'admin123', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+('일반', '남정호', 'vbag@yu.org', 'wrBlSOYi)3', '031-735-9824', '여성', '1959-07-10', '서울특별시 서대문구 선릉3길 (은경조진면)', 41.2540433624, 127.9871058576, '2024-07-07 05:05:05', 3, NULL, FALSE, NULL, NULL, FALSE, NULL, NULL),
+('일반', '장수민', 'cobagsang@yu.org', 'b%Cd%2XyQ', '02-123-4567', '여성', '1982-08-21', '부산광역시 서구 가락로 (지혜이동)', 42.1483473408, 130.4563119673, '2024-06-08 05:05:05', 0, NULL, FALSE, NULL, NULL, FALSE, NULL, NULL),
+('일반', '강준', 'jijongsu@cho.org', '7Q5^&Q%xQY', '051-888-9999', '여성', '1996-03-25', '인천광역시 동구 올림픽대로', 40.0030446212, 127.9870663598, '2024-03-05 05:05:05', 2, NULL, FALSE, NULL, NULL, FALSE, NULL, NULL),
+('일반', '최예지', 'coseong@naver.com', 'D4F*&FjLc$', '043-765-4321', '여성', '1991-11-15', '대전광역시 중구 도산대로', 35.7236505735, 128.6512347952, '2024-06-05 05:05:05', 0, NULL, FALSE, NULL, NULL, TRUE, '2023-07-07 07:07:07', '사용빈도가 낮아서'),
+('일반', '박은정', 'areumjang@yu.com', '%4OT4Wy0%w', '031-622-5413', '남성', '1980-01-08', '서울특별시 종로구 언주28길', 33.1683318551, 124.9577501406, '2024-07-05 05:05:05', 4, NULL, FALSE, NULL, NULL, TRUE, '2022-02-15 06:43:05', '이용이 불편하고 장애가 많아서'),
+('일반', '이준서', 'baggang@nate.com', 'p*T3s#4BZq', '054-321-9876', '남성', '1976-04-07', '대구광역시 중구 독산동', 37.8709254872, 128.6259886071, '2024-05-04 05:05:05', 3, NULL, TRUE, '2020-05-05 05:05:05', '테러 조장', FALSE, NULL, NULL),
+('일반', '주지아', 'gimogsun@baggimgim.com', '_2^SCggngR', '042-356-5052', '남성', '1954-01-12', '울산광역시 남구 영동대로 (중수장이마을)', 33.5841375522, 126.0050150198, '2024-04-05 05:05:05', 1, NULL, TRUE, '2020-06-10 11:35:19', '욕설', FALSE, NULL, NULL),
+('일반', '곽지영', 'eomjongsu@live.com', 'W2)2JRx!AY', '063-076-1164', '남성', '2004-06-19', '울산광역시 서구 서초중앙82가', 37.5764309823, 127.3082269336, '2024-07-05 05:05:05', 0, NULL, TRUE, '2021-01-01 01:23:45', '음란물', FALSE, NULL, NULL),
+('일반', '김지수', 'jiyoung@ji.com', 'p4F*&FjLc$', '042-111-2222', '여성', '1966-05-17', '광주광역시 남구 언주로', 36.1236444785, 127.9870657542, '2024-07-05 05:05:05', 2, NULL, TRUE, '2018-08-18 18:18:18', '욕설', FALSE, NULL, NULL),
+('사업자', '오은지', 'ohjung@live.com', 'D4F@jLc*F$', '02-777-8888', '남성', '1979-07-30', '부산광역시 북구 가산디지털2로', 34.9876543213, 129.1234567891, '2024-07-05 05:05:05', 0, '327894-123874', FALSE, NULL, NULL, FALSE, NULL, NULL),
+('사업자', '조정호', 'vbag1234@yu.org', 'wrBlSOYi)1233', '010-7356-9824', '남성', '1961-07-12', '인천광역시 서구 서곶로', 40.2540433624, 126.9871076546, '2024-07-05 05:05:05', 0, '800628-145964', FALSE, NULL, NULL, FALSE, NULL, NULL);
 
 SELECT * FROM users;
 
