@@ -357,7 +357,7 @@
      <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
          </details>  
     </div>
-</details>
+	</details>
 
 ---
 
