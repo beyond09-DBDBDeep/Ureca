@@ -608,3 +608,60 @@ SELECT
   JOIN cafe_menu c
     ON b.cafeMenuId = c.cafeMenuId
  WHERE c.menuId = 1;
+ 
+-- 카페 찜 기능
+DELIMITER $$
+
+CREATE TRIGGER increase_favorite_count
+AFTER INSERT ON favorite_cafe
+FOR EACH ROW
+BEGIN
+    UPDATE cafe
+    SET favoriteCount = favoriteCount + 1
+    WHERE cafeId = NEW.cafeId;
+END$$
+
+DELIMITER ;
+DELIMITER $$
+
+CREATE TRIGGER decrease_favorite_count
+AFTER DELETE ON favorite_cafe
+FOR EACH ROW
+BEGIN
+    UPDATE cafe
+    SET favoriteCount = favoriteCount - 1
+    WHERE cafeId = OLD.cafeId;
+END$$
+
+DELIMITER ;
+
+
+SELECT * FROM cafe;
+
+INSERT INTO favorite_cafe (userId, cafeId, createdDate)
+VALUES 
+(1, 1, '2024-01-01 10:00:00'),
+(1, 2, '2024-01-02 10:00:00'),
+(2, 1, '2024-01-03 10:00:00'),
+(2, 3, '2024-01-04 10:00:00'),
+(3, 2, '2024-01-05 10:00:00'),
+(3, 3, '2024-01-06 10:00:00');
+
+
+SELECT * FROM favorite_cafe;
+
+DELETE FROM favorite_cafe
+ WHERE userId = 1 
+   AND cafeId = 2;  -- 사용자 ID와 카페 ID로 필터링
+
+SELECT 
+       c.cafeName
+     , c.cafeAddress
+     , c.cafePhone
+     , fc.createdDate
+  FROM 
+       favorite_cafe fc
+  JOIN 
+       cafe c ON fc.cafeId = c.cafeId
+ WHERE fc.userId = 1  -- 사용자 ID로 필터링
+ ORDER BY fc.createdDate DESC;  -- 최신 순 정렬

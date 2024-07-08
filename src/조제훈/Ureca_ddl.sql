@@ -5,6 +5,7 @@ CREATE DATABASE URECA;
 USE URECA;
 
 -- 테이블 삭제
+DROP TABLE if EXISTS favorite_cafe;
 DROP TABLE IF EXISTS combo;
 DROP TABLE IF EXISTS comment;
 DROP TABLE IF EXISTS review;
@@ -89,6 +90,7 @@ CREATE TABLE cafe (
     longitude DECIMAL(13,10) NOT NULL,
     franchise BOOLEAN NOT NULL DEFAULT TRUE,
     userId BIGINT NOT NULL,
+    favoriteCount INT NOT NULL DEFAULT 0,
     FOREIGN KEY (userId) REFERENCES users(userId)
     ON DELETE CASCADE
 );
@@ -228,6 +230,17 @@ CREATE TABLE combo (
     ON DELETE CASCADE,
     FOREIGN KEY (bookmarkId) REFERENCES bookmark(bookmarkId)
     ON DELETE SET NULL
+);
+
+CREATE TABLE favorite_cafe (
+    favoriteId BIGINT primary KEY AUTO_INCREMENT,
+    userId BIGINT NOT NULL,
+    cafeId BIGINT NOT NULL,
+    createdDate DATETIME DEFAULT NOW(),
+    FOREIGN KEY (userId) REFERENCES users(userId)
+    ON DELETE CASCADE,
+    FOREIGN KEY (cafeId) REFERENCES cafe(cafeId)
+    ON DELETE CASCADE
 );
 
 -- 데이터 삽입
