@@ -119,6 +119,7 @@ CREATE TABLE menu (
 );
 
 CREATE TABLE cafe_menu (
+	 cafeMenuId BIGINT PRIMARY KEY AUTO_INCREMENT,
     cafeId BIGINT,
     menuId BIGINT,
     menuPrice INTEGER NOT NULL,
@@ -126,7 +127,6 @@ CREATE TABLE cafe_menu (
     menuFlavorScore DECIMAL(3,2) NOT NULL DEFAULT 0,
     menuSalesStatus BOOLEAN NOT NULL DEFAULT TRUE,
     categoryId BIGINT,
-    PRIMARY KEY (cafeId, menuId),
     FOREIGN KEY (cafeId) REFERENCES cafe(cafeId)
     ON DELETE CASCADE,
     FOREIGN KEY (menuId) REFERENCES menu(menuId)
@@ -178,6 +178,16 @@ CREATE TABLE review (
     ON DELETE SET NULL,
     FOREIGN KEY (cafeId) REFERENCES cafe(cafeId)
     ON DELETE CASCADE
+);
+
+CREATE TABLE cafe_menu_review (
+	cafeMenuId BIGINT,
+	reviewId BIGINT,
+	PRIMARY KEY (cafeMenuId, reviewId),
+	FOREIGN KEY (cafeMenuId) REFERENCES cafe_menu(cafeMenuId)
+	ON DELETE CASCADE,
+	FOREIGN KEY (reviewId) REFERENCES review(reviewId)
+	ON DELETE CASCADE
 );
 
 CREATE TABLE comment (
