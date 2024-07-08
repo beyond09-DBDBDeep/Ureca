@@ -62,9 +62,6 @@
          <p><img src="sample_data/img/img1.png"/></p>
 </details>
 
-![](sample_data/img/img1.png)
-
-<그림 1> “한국 커피 전문점 매장 추이
 
 국내의 커피 전문점 수는 2023년 기준으로 약 10만 개에 이르며, 카페 창업이 늘어남에 따라 브랜드 간 경쟁이 치열해지고 있다.
 
@@ -75,9 +72,6 @@
          <p><img src="sample_data/img/img2.png"/></p>
 </details>
 
-![](sample_data/img/img2.png)
-
-<그림 2> 카페 1회 방문 시 평균 지출 금액
 
 개인 카페는 프랜차이즈 카페와의 가격 경쟁에서 우위를 점하기 어려운데, 이는 프랜차이즈가 큰 규모의 이점을 이용해 원재료 비용을 절감하고 가격을 낮출 수 있기 때문이다.
 
@@ -88,9 +82,6 @@
          <p><img src="sample_data/img/img3.png"/></p>
 </details>
 
-![](sample_data/img/img3.png)
-
-<그림 3> 개인 카페를 선호하는 이유
 
 따라서, 개인 카페는 가격 외의 차별화 전략으로 고객들을 찾아오게 해야 한다.
 
