@@ -248,11 +248,13 @@
 
 #### (2) 논리 모델
 
-![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/bf9f38a5-6fdd-499d-8afc-8a8ee591151d)
+![Untitled](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/96640cc4-0415-471f-b94a-33e2d49f3c87)
+
 
 #### (3) 물리 모델
 
-![](https://github.com/beyond09-DBDBDeep/Ureca/blob/main/sample_data/phyModel.png)
+![Untitled (1)](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/ae7d94ee-5868-4d29-9164-2f53130f16db)
+
 
 ---
 ## 4. 프로젝트 수행 결과
