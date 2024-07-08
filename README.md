@@ -294,28 +294,28 @@
          </details>
 	 <details>
          <summary><b>2. 로그인 성공</b></summary>
-         
+         <p><img src="sample_data/testcase/회원/1_회원가입.gif"/></p>
          </details>
 	 <details>
          <summary><b>3. 로그인 실패</b></summary>
-         
+
          </details>
-	 <details>
+     <details>
          <summary><b>4. 아이디 찾기</b></summary>
          <p><img src="sample_data/testcase/회원/4_아이디찾기.gif"/></p>
          </details>
-	 <details>
+     <details>
          <summary><b>5. 비밀번호 찾기</b></summary>
          <p><img src="sample_data/testcase/회원/5_비밀번호찾기.gif"/></p>
          </details>
-	 <details>
+     <details>
          <summary><b>6. 비밀번호 수정</b></summary>
          <p><img src="sample_data/testcase/회원/6_비밀번호수정.gif"/></p>
-	 <details>
+     <details>
          <summary><b>7. 매장 조회</b></summary>
          <p><img src="sample_data/testcase/회원/7_매장조희.gif"/></p>
          </details>				 
-	 <details>
+     <details>
          <summary><b>8. 메뉴 조회</b></summary>
          <p><img src="sample_data/testcase/회원/8_메뉴조회.gif"/></p>
          </details>
@@ -329,32 +329,32 @@
      <details>
          <summary><b>11. 즐겨찾기 수정</b></summary>
          <p><img src="PNG/Captures/user/회원_닉네임검색1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
+     <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
          </details>
      <details>
          <summary><b>12. 즐겨찾기 삭제</b></summary>
          <p><img src="PNG/Captures/user/회원_닉네임검색1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
+     <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
          </details>    
      <details>
          <summary><b>13. 리뷰 추가</b></summary>
          <p><img src="PNG/Captures/user/회원_닉네임검색1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
+     <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
          </details>    
      <details>
          <summary><b>14. 리뷰 수정</b></summary>
          <p><img src="PNG/Captures/user/회원_닉네임검색1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
+     <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
          </details>    
      <details>
          <summary><b>15. 리뷰 삭제</b></summary>
          <p><img src="PNG/Captures/user/회원_닉네임검색1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
+     <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
          </details>    
      <details>
          <summary><b>16. 내 리뷰 조회</b></summary>
          <p><img src="PNG/Captures/user/회원_닉네임검색1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
+     <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
          </details>  
     </div>
 </details>
