@@ -189,6 +189,12 @@ UPDATE users
 	  , blackRegDate = NOW()
 	  , blackReason = '불법 광고'
  WHERE userId = 2;
+ 
+ UPDATE users
+   SET blackUserStatus = false
+	  , blackRegDate = NULL
+	  , blackReason = NULL
+ WHERE userId = 2;
 
 -- 32. 매장 관리
 
