@@ -229,6 +229,34 @@ INSERT INTO combo (menuCount, optionCount, menuListId, bookmarkId) VALUES
 
 SELECT * FROM combo;
 
+DELIMITER $$
+
+CREATE OR REPLACE TRIGGER count_bookmarks_for_menu
+AFTER INSERT ON combo
+FOR EACH ROW
+BEGIN
+    DECLARE menu_id INT;
+
+    -- 새로 삽입된 레코드와 연결된 menuId를 가져옵니다.
+    SELECT C.menuId INTO menu_id
+    FROM menu_list AS C
+    WHERE C.menuListId = NEW.menuListId;
+
+    -- menuId가 유효한 경우에만 업데이트 수행
+    IF menu_id IS NOT NULL THEN
+        UPDATE cafe_menu AS A
+        SET A.menuBookmarkCount = (
+            SELECT COUNT(DISTINCT B.comboId)
+            FROM combo AS B
+            JOIN menu_list AS C ON B.menuListId = C.menuListId
+            WHERE C.menuId = menu_id
+        )
+        WHERE A.menuId = menu_id;
+    END IF;
+END $$
+
+DELIMITER ;
+
 -- 11. 즐겨찾기 수정
 UPDATE bookmark
    SET alias = '즐겨찾기 수정',

@@ -125,7 +125,8 @@ CREATE TABLE cafe_menu (
     cafeId BIGINT,
     menuId BIGINT,
     menuPrice INTEGER NOT NULL,
-    menuOrderCount INTEGER NOT NULL,
+    menuReviewCount INTEGER NOT NULL DEFAULT 0,
+    menuBookmarkCount INTEGER NOT NULL DEFAULT 0,
     menuFlavorScore DECIMAL(3,2) NOT NULL DEFAULT 0,
     menuSalesStatus BOOLEAN NOT NULL DEFAULT TRUE,
     categoryId BIGINT,
@@ -291,17 +292,17 @@ INSERT INTO menu (menuName, useCount) VALUES
 SELECT * FROM menu;
 
 -- 카페 오은지의 메뉴 설정
-INSERT INTO cafe_menu (cafeId, menuId, menuPrice, menuOrderCount, menuFlavorScore, menuSalesStatus, categoryId) VALUES
-(1, 1, 5000, 0, 4.5, TRUE, 3),  -- 에스프레소
-(1, 2, 5500, 0, 4.0, TRUE, 3),  -- 아메리카노
-(1, 3, 6000, 0, 4.2, TRUE, 3),  -- 카페 라떼
-(1, 5, 5800, 0, 4.3, TRUE, 3),  -- 바닐라 라떼
-(1, 6, 6200, 0, 4.4, TRUE, 3), -- 카라멜 마키아토
-(1, 4, 5300, 0, 4.1, TRUE, 7),  -- 녹차 라떼
-(1, 7, 4800, 0, 4.0, TRUE, 4),  -- 아이스 티
-(1, 8, 5900, 0, 4.3, TRUE, 8),  -- 모카빵
-(1, 9, 5500, 0, 4.2, TRUE, 8),  -- 허니브레드
-(1, 10, 4500, 0, 3.9, TRUE, 6); -- 레몬 에이드
+INSERT INTO cafe_menu (cafeId, menuId, menuPrice, menuReviewCount, menuBookmarkCount, menuFlavorScore, menuSalesStatus, categoryId) VALUES
+(1, 1, 5000, 0, 0, 4.5, TRUE, 3),  -- 에스프레소
+(1, 2, 5500, 0, 0, 4.0, TRUE, 3),  -- 아메리카노
+(1, 3, 6000, 0, 0, 4.2, TRUE, 3),  -- 카페 라떼
+(1, 5, 5800, 0, 0, 4.3, TRUE, 3),  -- 바닐라 라떼
+(1, 6, 6200, 0, 0, 4.4, TRUE, 3), -- 카라멜 마키아토
+(1, 4, 5300, 0, 0, 4.1, TRUE, 7),  -- 녹차 라떼
+(1, 7, 4800, 0, 0, 4.0, TRUE, 4),  -- 아이스 티
+(1, 8, 5900, 0, 0, 4.3, TRUE, 8),  -- 모카빵
+(1, 9, 5500, 0, 0, 4.2, TRUE, 8),  -- 허니브레드
+(1, 10, 4500, 0, 0, 3.9, TRUE, 6); -- 레몬 에이드
 
 SELECT * FROM cafe_menu;
 
