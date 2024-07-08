@@ -247,18 +247,13 @@
 
 ![image](sample_data/conModel.png)
 
-
 #### (2) 논리 모델
 
-![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/172617658/c89bfb21-6e06-4358-ae12-12070592ec9f)
-
-
+![Untitled (2)](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/1eda8a38-3eec-4f8f-b4ce-f9149d3223d9)
 
 #### (3) 물리 모델
 
-![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/172617658/984afa57-3576-4da4-a18d-f4093089555a)
-
-
+![Untitled (3)](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/fbb19fc2-bddc-4187-a454-67e8bc52b643)
 
 ---
 ## 4. 프로젝트 수행 결과
