@@ -556,6 +556,13 @@ SELECT * FROM comment WHERE userId = 13;
 
 -- 관리자 
 -- 30. 회원 관리
+SELECT userId
+     , userName
+     , blackUserStatus
+     , blackRegDate
+	  , blackReason 
+  FROM users WHERE userId = 2;
+
 UPDATE users
    SET blackUserStatus = true
 	  , blackRegDate = NOW()
@@ -681,6 +688,8 @@ DELIMITER ;
 SELECT * FROM users;
 
 -- 메뉴에서 리뷰 조회
+INSERT INTO cafe_menu_review VALUES (1,1);
+
 SELECT
 		 a.*
   FROM review a
