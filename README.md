@@ -250,7 +250,8 @@
 
 #### (2) 논리 모델
 
-![Untitled](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/96640cc4-0415-471f-b94a-33e2d49f3c87)
+![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/172617658/c89bfb21-6e06-4358-ae12-12070592ec9f)
+
 
 
 #### (3) 물리 모델
