@@ -247,7 +247,7 @@
 
 #### (2) 논리 모델
 
-![](https://github.com/beyond09-DBDBDeep/Ureca/blob/main/sample_data/logModel.png)
+![image](https://github.com/beyond09-DBDBDeep/Ureca/assets/122279082/bf9f38a5-6fdd-499d-8afc-8a8ee591151d)
 
 #### (3) 물리 모델
 
