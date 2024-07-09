@@ -553,7 +553,7 @@
 
 <img src = "sample_data/img/testCase.png"/>
 
-[테스트 케이스 문서 바로가기](https://github.com/beyond09-DBDBDeep/Ureca/docs/testCase.xlsx)
+[테스트 케이스 문서 바로가기](https://github.com/beyond09-DBDBDeep/Ureca/docs)
 
 ---
 
