@@ -551,10 +551,12 @@
 
 ### 4.1 테스트 케이스 문서
 
+<img src = "sample_data/img/testCase.png"/>
 
-
+[테스트 케이스 문서 바로가기](https://github.com/beyond09-DBDBDeep/Ureca/docs/testCase.xlsx)
 
 ---
+
 ### 4.2 테스트 결과
 
 <details>
