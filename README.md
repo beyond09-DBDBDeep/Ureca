@@ -641,7 +641,7 @@
          </details>
          <details>
          <summary><b>2. 카페 등록</b></summary>
-         <p><img src="sample_data/testcase/사업자/사업자 02 카페 등록.gif"/></p>
+         <p><img src="sample_data/testcase/사업자/사업자 02. 카페 등록.gif"/></p>
          </details>
          <details>
          <summary><b>3. 내 매장 조회</b></summary>
