@@ -801,11 +801,11 @@ flush privileges;
 <p align="center">구축된 서버 정보</p>
 </div>
 
-> #### master_univdb
+> #### master_Ureca
 >- HOST IP: 192.168.0.20
 >- Port: 3306
 
-> #### slave_univdb(Replication)
+> #### slave_Ureca(Replication)
 >- HOST IP: 192.168.0.20
 >- Port: 3306
 
