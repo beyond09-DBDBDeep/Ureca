@@ -1,6 +1,6 @@
 ![](sample_data/img/banner.png)
 # URECA
-| Your Recommended Cafe
+| Your REcommended CAfe
 
 #### 🌱 TEAM
 [😺전기범](https://github.com/woodart8)&nbsp;&nbsp;&nbsp;&nbsp;[🐕조제훈](https://github.com/JoJeHuni)&nbsp;&nbsp;&nbsp;&nbsp;[🐢방동호](https://github.com/Bang1999)&nbsp;&nbsp;&nbsp;&nbsp;[🦎최해관](https://github.com/Haegwan-Choe)&nbsp;&nbsp;&nbsp;&nbsp;[🐈이효진](https://github.com/jinjin0528)
