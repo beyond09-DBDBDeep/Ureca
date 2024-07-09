@@ -1,3 +1,0 @@
--- 회원 등록
-INSERT INTO users (userType, userName, email, userPassword, phone, gender, birth, address, latitude, longitude, loginFailCount, businessRegNo, blackUserStatus, blackRegDate, blackReason, userQuitStatus, userQuitDate, userQuitReason) VALUES
-('사업자', '전기범', 'kibeom1145@gmail.com', 'asdfasdf', '010-4288-0442', '남성', '1999-09-20', '경기도 남양주시 별내면 청학로 114번길', 12.123123123, 123.123123123, 0, '800628-125967', FALSE, NULL, NULL, FALSE, NULL, NULL);
