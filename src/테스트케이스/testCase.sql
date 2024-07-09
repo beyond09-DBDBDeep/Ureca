@@ -21,6 +21,27 @@ VALUES
 
 SELECT users.userName FROM users;
 
+-- 1.1 회원 탈퇴
+SELECT userId
+     , userQuitStatus
+     , userQuitDate
+     , userQuitReason
+  FROM users
+ WHERE userId = 2;
+ 
+UPDATE users 
+   SET userQuitStatus = true
+	  , userQuitDate = NOW()
+	  , userQuitReason = '개인정보 삭제' 
+ WHERE userId = 2;  
+ 
+SELECT userId
+     , userQuitStatus
+     , userQuitDate
+     , userQuitReason
+  FROM users
+ WHERE userId = 2;
+
 -- 2. 로그인 성공
 DELIMITER $$
 CREATE OR REPLACE TRIGGER update_login_history
