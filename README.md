@@ -22,7 +22,7 @@
 <details> 
 <summary>프로젝트 일정 : 2024년 07월 01일 ~ 2024년 07월 09일(WBS)</summary>
   <div align="center">
-    <p><img src="sample_data/img/projectschedule.png"/>[WBS 문서 바로가기]</p>
+    <p><img src="sample_data/img/projectschedule.png"/></p>
   </div>
 
 </details>
