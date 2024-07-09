@@ -317,9 +317,8 @@
          <p><img src="sample_data/testcase/회원/2_로그인 성공.gif"/></p>
          </details>
 	 <details>
-         <summary><b>3. ★★★★로그인 실패</b></summary>
-         <p><img src="PNG/Captures/user/회원_회원정보_수정1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_회원정보_수정2.png"/></p>
+         <summary><b>3. 로그인 실패</b></summary>
+         <p><img src="sample_data/testcase/회원/3_로그인 실패.gif"/></p>
          </details>
 	 <details>
          <summary><b>4. 아이디 찾기</b></summary>
