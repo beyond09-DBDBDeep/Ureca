@@ -788,6 +788,7 @@ flush privileges;
 <img src="sample_data/img/masterSlave.png"/>
 <p align="center">Master & Slave</p>
 </div>
+
 <div align="center">
 <img src="sample_data/img/readOnly.png"/>
 <p align="center">READ ONLY</p>
@@ -801,11 +802,11 @@ flush privileges;
 </div>
 
 > #### master_univdb
->- HOST IP: 192.168.0.37
+>- HOST IP: 192.168.0.20
 >- Port: 3306
 
 > #### slave_univdb(Replication)
->- HOST IP: 192.168.0.48
+>- HOST IP: 192.168.0.20
 >- Port: 3306
 
 
