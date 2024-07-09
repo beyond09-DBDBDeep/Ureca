@@ -656,7 +656,7 @@
          <p><img src="sample_data/testcase/사업자/사업자 05. 카테고리 등록.gif"/></p>
          </details>
          <details>
-         <summary><b>6-1. 메뉴 등록</b></summary>
+         <summary><b>6. 메뉴 등록</b></summary>
          <p><img src="sample_data/testcase/사업자/사업자 06. 메뉴 등록.gif"/></p>
          </details>
          <details>
