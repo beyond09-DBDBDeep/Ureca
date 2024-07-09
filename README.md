@@ -366,12 +366,16 @@
          <summary><b>14. 리뷰 삭제, 내 리뷰 조회</b></summary>
          <p><img src="sample_data/testcase/회원/15,16_리뷰.gif"/></p>
          </details>
+     <details>
+         <summary><b>15. 메뉴에 대한 리뷰 카운트</b></summary>
+         <p><img src="sample_data/testcase/관리자/05_메뉴에 대한 리뷰 카운트.gif"/></p>
+         </details>  
     <details>
-         <summary><b>15. 메뉴별 리뷰 조회</b></summary>
+         <summary><b>16. 메뉴별 리뷰 조회</b></summary>
          <p><img src="sample_data/testcase/회원/17_메뉴별 리뷰 조회.gif"/></p>
          </details>
     <details>
-         <summary><b>16. 카페 찜 추가 및 삭제</b></summary>
+         <summary><b>17. 카페 찜 추가 및 삭제</b></summary>
          <p><img src="sample_data/testcase/회원/18_카페 찜 추가 및 삭제.gif"/></p>
          </details>     
     </div>
@@ -455,11 +459,7 @@
   <details>
          <summary><b>4. 매장 관리</b></summary>
          <p><img src="sample_data/testcase/관리자/04_매장관리.gif"/></p>
-         </details>
- <details>
-         <summary><b>5. 메뉴에 대한 리뷰 카운트</b></summary>
-         <p><img src="sample_data/testcase/관리자/05_메뉴에 대한 리뷰 카운트.gif"/></p>
-         </details>        
+         </details>      
     </div>
 </details>
 
