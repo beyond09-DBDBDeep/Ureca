@@ -1,6 +1,6 @@
 ![](sample_data/img/banner.png)
 # URECA
-| Your REcommended CAfe
+| Your Recommended CAfe
 
 #### 🌱 TEAM
 [😺전기범](https://github.com/woodart8)&nbsp;&nbsp;&nbsp;&nbsp;[🐕조제훈](https://github.com/JoJeHuni)&nbsp;&nbsp;&nbsp;&nbsp;[🐢방동호](https://github.com/Bang1999)&nbsp;&nbsp;&nbsp;&nbsp;[🦎최해관](https://github.com/Haegwan-Choe)&nbsp;&nbsp;&nbsp;&nbsp;[🐈이효진](https://github.com/jinjin0528)
@@ -23,6 +23,7 @@
 <summary>프로젝트 일정 : 2024년 07월 01일 ~ 2024년 07월 09일(WBS)</summary>
   <div align="center">
     <img src="sample_data/img/projectschedule.png">
+    <p>[WBS 문서 바로가기](https://github.com/beyond09-DBDBDeep/Ureca/blob/main/docs/WBS.pdf)</p>
   </div>
 
 </details>
@@ -509,6 +510,8 @@
     </tbody>
 </table>
 </details>
+
+[요구사항 명세서 바로가기](https://github.com/beyond09-DBDBDeep/Ureca/blob/main/docs/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C.pdf)
 
 ---
 
