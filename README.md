@@ -22,8 +22,7 @@
 <details> 
 <summary>프로젝트 일정 : 2024년 07월 01일 ~ 2024년 07월 09일(WBS)</summary>
   <div align="center">
-    <img src="sample_data/img/projectschedule.png">
-    <p>[WBS 문서 바로가기](https://github.com/beyond09-DBDBDeep/Ureca/blob/main/docs/WBS.pdf)</p>
+    <p><img src="sample_data/img/projectschedule.png"/>[WBS 문서 바로가기]</p>
   </div>
 
 </details>
