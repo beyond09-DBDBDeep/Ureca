@@ -1,5 +1,5 @@
 ![](sample_data/img/banner.png)
-# Ureca
+# URECA
 | Your Recommended Cafe
 
 #### 🌱 TEAM
