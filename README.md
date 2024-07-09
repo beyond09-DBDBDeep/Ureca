@@ -603,11 +603,11 @@
          <p><img src="sample_data/testcase/회원/10_즐겨찾기 추가.gif"/></p>
          </details>
      <details>
-         <summary><b>11. ★★★★즐겨찾기 수정</b></summary>
+         <summary><b>11. 즐겨찾기 수정</b></summary>
          <p><img src="sample_data/testcase/회원/11_즐겨찾기수정.gif"/></p>
          </details>
      <details>
-         <summary><b>12. ★★★★즐겨찾기 삭제</b></summary>
+         <summary><b>12. 즐겨찾기 삭제</b></summary>
          <p><img src="sample_data/testcase/회원/12_즐겨찾기 삭제.gif"/></p>
          </details>
      <details>
@@ -658,7 +658,7 @@
          <p><img src="sample_data/testcase/사업자/사업자 05. 카테고리 등록.gif"/></p>
          </details>
          <details>
-         <summary><b>6-1. 메뉴 등록</b></summary>
+         <summary><b>6. 메뉴 등록</b></summary>
          <p><img src="sample_data/testcase/사업자/사업자 06. 메뉴 등록.gif"/></p>
          </details>
          <details>
