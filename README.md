@@ -747,6 +747,69 @@ Ubuntu Linux를 이용하여 DB 서버를 Master-Slave 형태로 Replication하�
 권한 설정을 통해 Slave는 SELECT만 처리하게 하고, 나머지 쿼리는 Master가 처리하게 하여 서버의 부하를 줄였다.
 
 ---
+
+### 5.3 Ubuntu 리눅스에 mariadb 서버 구축
+
+#### Virtual Box / Ubuntu Linux 실행하여 Replication 서버 구축
+> -Master(INSERT, UPDATE, DELETE)\
+> -Slave(SELECT)
+
+#### master 환경 설정 단계
+1. `master` mariaDB 설정 파일 수정
+  - 1.1 주석 처리 된 `log_bin, expire_logs_days, max_binlog_size` 항목 주석 제거
+  - `bind-adress = 0.0.0.0` 으로 수정
+  - Write and Quit
+2. mariaDB 재 시작
+3. `slave`에서 접속 할 계정 권한 설정
+4. `master`의 status에서 file과 position 정보 조회
+
+### slave 환경 설정 단계
+
+1. `slave` mariaDB 설정 파일 수정
+  - 아래로 스크롤하여 `[mysqld]` 하단에 `server-id = n` , `relay_log = mysql-relay-bin`, `log_slave_updates = 1` , `read_only = 1` 를 작성 `n` 은 상황에 따라 변경
+2. mariaDB 재 시작
+3. `slave` 멈추기
+4. `change master to master_host = ‘master IP주소’, master_port = 3306, master_user = ‘master’, master_password = ‘master’, master_log_file = ‘master의 file’, master_log_pos=’master 의 position’;`작성
+5. `slave` 시작
+6. `show slave status \G;`로 slave 상태 확인
+
+### slave에서 INSERT 이벤트 방지를 위한 설정
+
+- `slave` 서버의 `read-only` 옵션 적용 관련
+
+```sql
+-- slave 서버에서 slave의 root계정으로 root를 제외한 계정의 user 유저 권한 삭제
+update mysql.user set super_priv='N' where user <> 'root';
+flush privileges;
+
+-- HeidiSQL에 slave가 접속중이라면 HeidiSQL에서 접속 해제 후 다시 접속 
+```
+<div align="center">
+<img src="sample_data/img/masterSlave.png"/>
+<p align="center">Master & Slave</p>
+</div>
+<div align="center">
+<img src="sample_data/img/readOnly.png"/>
+<p align="center">READ ONLY</p>
+</div>
+
+
+#### 구축된 Server 정보
+<div align="center">
+<img src = "sample_data/img/serverInfo.png"/>
+<p align="center">구축된 서버 정보</p>
+</div>
+
+> #### master_univdb
+>- HOST IP: 192.168.0.37
+>- Port: 3306
+
+> #### slave_univdb(Replication)
+>- HOST IP: 192.168.0.48
+>- Port: 3306
+
+
+---
 ## 6. 팀 회고
 
 #### 😺전기범
