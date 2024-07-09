@@ -597,18 +597,15 @@
          </details>
      <details>
          <summary><b>10. 즐겨찾기 추가</b></summary>
-         <p><img src="sample_data/testcase/회원/10_즐겨찾기.gif"/></p>
-	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
+         <p><img src="sample_data/testcase/회원/10_즐겨찾기 추가.gif"/></p>
          </details>
      <details>
          <summary><b>11. ★★★★즐겨찾기 수정</b></summary>
-         <p><img src="PNG/Captures/user/회원_닉네임검색1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
+         <p><img src="sample_data/testcase/회원/12_즐겨찾기 수정.gif"/></p>
          </details>
      <details>
          <summary><b>12. ★★★★즐겨찾기 삭제</b></summary>
-         <p><img src="PNG/Captures/user/회원_닉네임검색1.png"/></p>
-	 <p><img src="PNG/Captures/user/회원_닉네임검색2.png"/></p>
+         <p><img src="sample_data/testcase/회원/13_즐겨찾기 삭제.gif"/></p>
          </details>
      <details>
          <summary><b>13. 리뷰 추가, 수정</b></summary>
