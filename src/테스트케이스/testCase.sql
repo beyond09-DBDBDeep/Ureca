@@ -281,6 +281,15 @@ SELECT * FROM combo;
 
 INSERT INTO cafe_menu_bookmark (cafeMenuId, bookmarkId) VALUES (1, 1);
 
+SELECT B.menuName
+     , A.menuPrice
+     , A.menuBookmarkCount
+   FROM cafe_menu AS A
+   JOIN menu AS B
+      ON A.menuId = B.menuId
+ WHERE cafeId = 1
+ ORDER BY menuBookmarkCount DESC;
+
 SELECT * FROM cafe_menu WHERE menuId = 1;
 
 -- 11. 즐겨찾기 수정
@@ -737,6 +746,15 @@ DELIMITER ;
 INSERT INTO cafe_menu_review (cafeMenuId, reviewId) VALUES (1, 1);
 
 SELECT * FROM cafe_menu;
+
+SELECT B.menuName
+     , A.menuPrice
+     , A.menuReviewCount
+   FROM cafe_menu AS A
+   JOIN menu AS B
+      ON A.menuId = B.menuId
+ WHERE cafeId = 1
+ ORDER BY menuReviewCount DESC;
 
 DELIMITER $$
 
