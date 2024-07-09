@@ -688,11 +688,11 @@
          <p><img src="sample_data/testcase/사업자/사업자 12. 코멘트 등록.gif"/></p>
          </details>    
 	 <details>
-         <summary><b>12. 코멘트 수정</b></summary>
+         <summary><b>13. 코멘트 수정</b></summary>
          <p><img src="sample_data/testcase/사업자/사업자 13. 코멘트 수정.gif"/></p>
          </details>
 	 <details>
-         <summary><b>12. 코멘트 삭제</b></summary>
+         <summary><b>14. 코멘트 삭제</b></summary>
          <p><img src="sample_data/testcase/사업자/사업자 14. 코멘트 삭제.gif"/></p>
          </details>    
     </div>
