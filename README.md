@@ -748,7 +748,7 @@ Ubuntu Linux를 이용하여 DB 서버를 Master-Slave 형태로 Replication하�
 
 ---
 
-#### 5.2.1 Ubuntu 리눅스에 mariadb 서버 구축
+### 5.2.1 Ubuntu 리눅스에 mariadb 서버 구축
 
 #### Virtual Box / Ubuntu Linux 실행하여 Replication 서버 구축
 > -Master(INSERT, UPDATE, DELETE)\
